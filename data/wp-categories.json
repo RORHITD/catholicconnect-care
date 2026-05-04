@@ -1,0 +1,1534 @@
+[
+  {
+    "id": 359,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/bible/",
+    "name": "Bible",
+    "slug": "bible",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Bible Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Bible Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/bible/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/bible\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/bible\\/\",\"name\":\"Bible Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/bible\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/bible\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bible\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Bible Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Bible Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/bible/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/bible/",
+            "url": "https://catholicconnect.care/category/bible/",
+            "name": "Bible Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/bible/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/bible/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Bible"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/359",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=359"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 361,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/catholic-charities/",
+    "name": "Catholic Charities",
+    "slug": "catholic-charities",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Catholic Charities Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Catholic Charities Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/catholic-charities/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-charities\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-charities\\/\",\"name\":\"Catholic Charities Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-charities\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-charities\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Catholic Charities\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Catholic Charities Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Catholic Charities Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/catholic-charities/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/catholic-charities/",
+            "url": "https://catholicconnect.care/category/catholic-charities/",
+            "name": "Catholic Charities Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/catholic-charities/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/catholic-charities/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Catholic Charities"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/361",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=361"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 360,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/catholic-quotes/",
+    "name": "Catholic Quotes",
+    "slug": "catholic-quotes",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Catholic Quotes Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Catholic Quotes Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/catholic-quotes/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-quotes\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-quotes\\/\",\"name\":\"Catholic Quotes Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-quotes\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/catholic-quotes\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Catholic Quotes\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Catholic Quotes Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Catholic Quotes Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/catholic-quotes/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/catholic-quotes/",
+            "url": "https://catholicconnect.care/category/catholic-quotes/",
+            "name": "Catholic Quotes Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/catholic-quotes/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/catholic-quotes/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Catholic Quotes"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/360",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=360"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 362,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/role-models/",
+    "name": "Role Models",
+    "slug": "role-models",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Role Models Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Role Models Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/role-models/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/role-models\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/role-models\\/\",\"name\":\"Role Models Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/role-models\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/role-models\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Role Models\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Role Models Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Role Models Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/role-models/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/role-models/",
+            "url": "https://catholicconnect.care/category/role-models/",
+            "name": "Role Models Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/role-models/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/role-models/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Role Models"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/362",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=362"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 357,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/saints/",
+    "name": "Saints",
+    "slug": "saints",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Saints Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Saints Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/saints/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/\",\"name\":\"Saints Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Saints\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Saints Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Saints Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/saints/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/saints/",
+            "url": "https://catholicconnect.care/category/saints/",
+            "name": "Saints Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/saints/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/saints/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Saints"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/357",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=357"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 355,
+    "count": 0,
+    "description": "",
+    "link": "https://catholicconnect.care/category/social-media-posts/",
+    "name": "Social Media Posts",
+    "slug": "social-media-posts",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Social Media Posts Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Social Media Posts Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/social-media-posts/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/social-media-posts\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/social-media-posts\\/\",\"name\":\"Social Media Posts Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/social-media-posts\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/social-media-posts\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Social Media Posts\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Social Media Posts Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Social Media Posts Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/social-media-posts/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/social-media-posts/",
+            "url": "https://catholicconnect.care/category/social-media-posts/",
+            "name": "Social Media Posts Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/social-media-posts/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/social-media-posts/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Social Media Posts"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/355",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=355"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 358,
+    "count": 1,
+    "description": "",
+    "link": "https://catholicconnect.care/category/saints/st-padre-pio/",
+    "name": "St. Padre Pio",
+    "slug": "st-padre-pio",
+    "taxonomy": "category",
+    "parent": 357,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>St. Padre Pio Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"St. Padre Pio Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/saints/st-padre-pio/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/st-padre-pio\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/st-padre-pio\\/\",\"name\":\"St. Padre Pio Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/st-padre-pio\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/st-padre-pio\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Saints\",\"item\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"St. Padre Pio\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "St. Padre Pio Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "St. Padre Pio Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/saints/st-padre-pio/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/saints/st-padre-pio/",
+            "url": "https://catholicconnect.care/category/saints/st-padre-pio/",
+            "name": "St. Padre Pio Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/saints/st-padre-pio/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/saints/st-padre-pio/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Saints",
+                "item": "https://catholicconnect.care/category/saints/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "St. Padre Pio"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/358",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/357"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=358"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "up": [
+        {
+          "id": 357,
+          "link": "https://catholicconnect.care/category/saints/",
+          "name": "Saints",
+          "slug": "saints",
+          "taxonomy": "category",
+          "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Saints Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Saints Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/saints/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/\",\"name\":\"Saints Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/saints\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Saints\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+          "yoast_head_json": {
+            "title": "Saints Archives - The Catholic Connect Foundation",
+            "robots": {
+              "index": "noindex",
+              "follow": "follow"
+            },
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Saints Archives - The Catholic Connect Foundation",
+            "og_url": "https://catholicconnect.care/category/saints/",
+            "og_site_name": "The Catholic Connect Foundation",
+            "og_image": [
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+                "type": "image/jpeg"
+              }
+            ],
+            "twitter_card": "summary_large_image",
+            "twitter_site": "@catholiccaring",
+            "schema": {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "CollectionPage",
+                  "@id": "https://catholicconnect.care/category/saints/",
+                  "url": "https://catholicconnect.care/category/saints/",
+                  "name": "Saints Archives - The Catholic Connect Foundation",
+                  "isPartOf": {
+                    "@id": "https://catholicconnect.care/#website"
+                  },
+                  "breadcrumb": {
+                    "@id": "https://catholicconnect.care/category/saints/#breadcrumb"
+                  },
+                  "inLanguage": "en-US"
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://catholicconnect.care/category/saints/#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://catholicconnect.care/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Saints"
+                    }
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://catholicconnect.care/#website",
+                  "url": "https://catholicconnect.care/",
+                  "name": "The Catholic Connect Foundation",
+                  "description": "Supporting Charitable and Humanitarian Efforts",
+                  "publisher": {
+                    "@id": "https://catholicconnect.care/#organization"
+                  },
+                  "potentialAction": [
+                    {
+                      "@type": "SearchAction",
+                      "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                      },
+                      "query-input": {
+                        "@type": "PropertyValueSpecification",
+                        "valueRequired": true,
+                        "valueName": "search_term_string"
+                      }
+                    }
+                  ],
+                  "inLanguage": "en-US"
+                },
+                {
+                  "@type": "Organization",
+                  "@id": "https://catholicconnect.care/#organization",
+                  "name": "The Catholic Connect Foundation",
+                  "url": "https://catholicconnect.care/",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "https://catholicconnect.care/#/schema/logo/image/",
+                    "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+                    "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+                    "width": 600,
+                    "height": 600,
+                    "caption": "The Catholic Connect Foundation"
+                  },
+                  "image": {
+                    "@id": "https://catholicconnect.care/#/schema/logo/image/"
+                  },
+                  "sameAs": [
+                    "https://facebook.com/catholicconnectfoundation",
+                    "https://x.com/catholiccaring",
+                    "https://instagram.com/catholicconnect.care"
+                  ]
+                }
+              ]
+            }
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "https://catholicconnect.care/wp-json/wp/v2/categories/357",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+              }
+            ],
+            "wp:post_type": [
+              {
+                "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=357"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 356,
+    "count": 2,
+    "description": "",
+    "link": "https://catholicconnect.care/category/tips/",
+    "name": "Tips",
+    "slug": "tips",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Tips Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Tips Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/tips/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/tips\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/tips\\/\",\"name\":\"Tips Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/tips\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/tips\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Tips\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Tips Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Tips Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/tips/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/tips/",
+            "url": "https://catholicconnect.care/category/tips/",
+            "name": "Tips Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/tips/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/tips/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tips"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/356",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=356"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 23,
+    "description": "",
+    "link": "https://catholicconnect.care/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Uncategorized Archives - The Catholic Connect Foundation</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Uncategorized Archives - The Catholic Connect Foundation\" />\n<meta property=\"og:url\" content=\"https://catholicconnect.care/category/uncategorized/\" />\n<meta property=\"og:site_name\" content=\"The Catholic Connect Foundation\" />\n<meta property=\"og:image\" content=\"https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg\" />\n\t<meta property=\"og:image:width\" content=\"600\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@catholiccaring\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/uncategorized\\/\",\"url\":\"https:\\/\\/catholicconnect.care\\/category\\/uncategorized\\/\",\"name\":\"Uncategorized Archives - The Catholic Connect Foundation\",\"isPartOf\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/uncategorized\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/catholicconnect.care\\/category\\/uncategorized\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/catholicconnect.care\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Uncategorized\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#website\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"name\":\"The Catholic Connect Foundation\",\"description\":\"Supporting Charitable and Humanitarian Efforts\",\"publisher\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/catholicconnect.care\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#organization\",\"name\":\"The Catholic Connect Foundation\",\"url\":\"https:\\/\\/catholicconnect.care\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"contentUrl\":\"https:\\/\\/www.catholicconnect.care\\/wp-content\\/uploads\\/2021\\/09\\/Profile1_IconVolume.jpg\",\"width\":600,\"height\":600,\"caption\":\"The Catholic Connect Foundation\"},\"image\":{\"@id\":\"https:\\/\\/catholicconnect.care\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/facebook.com\\/catholicconnectfoundation\",\"https:\\/\\/x.com\\/catholiccaring\",\"https:\\/\\/instagram.com\\/catholicconnect.care\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Uncategorized Archives - The Catholic Connect Foundation",
+      "robots": {
+        "index": "noindex",
+        "follow": "follow"
+      },
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Uncategorized Archives - The Catholic Connect Foundation",
+      "og_url": "https://catholicconnect.care/category/uncategorized/",
+      "og_site_name": "The Catholic Connect Foundation",
+      "og_image": [
+        {
+          "width": 600,
+          "height": 600,
+          "url": "https://catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@catholiccaring",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://catholicconnect.care/category/uncategorized/",
+            "url": "https://catholicconnect.care/category/uncategorized/",
+            "name": "Uncategorized Archives - The Catholic Connect Foundation",
+            "isPartOf": {
+              "@id": "https://catholicconnect.care/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://catholicconnect.care/category/uncategorized/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://catholicconnect.care/category/uncategorized/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://catholicconnect.care/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Uncategorized"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://catholicconnect.care/#website",
+            "url": "https://catholicconnect.care/",
+            "name": "The Catholic Connect Foundation",
+            "description": "Supporting Charitable and Humanitarian Efforts",
+            "publisher": {
+              "@id": "https://catholicconnect.care/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://catholicconnect.care/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://catholicconnect.care/#organization",
+            "name": "The Catholic Connect Foundation",
+            "url": "https://catholicconnect.care/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://catholicconnect.care/#/schema/logo/image/",
+              "url": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "contentUrl": "https://www.catholicconnect.care/wp-content/uploads/2021/09/Profile1_IconVolume.jpg",
+              "width": 600,
+              "height": 600,
+              "caption": "The Catholic Connect Foundation"
+            },
+            "image": {
+              "@id": "https://catholicconnect.care/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://facebook.com/catholicconnectfoundation",
+              "https://x.com/catholiccaring",
+              "https://instagram.com/catholicconnect.care"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://catholicconnect.care/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
