@@ -54,23 +54,23 @@ export default function WhyChoose() {
     <section className="py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
             Our Values
           </p>
-          <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+          <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
             Why Choose Our Charity
           </h2>
         </div>
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p) => (
             <div key={p.title} className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-burgundy-50 text-burgundy-700 ring-2 ring-gold-400">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-50 text-brand-600 ring-2 ring-brand-300">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   {p.icon}
                 </svg>
               </div>
-              <h3 className="mt-5 font-display text-xl text-burgundy-800">{p.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-stone-warm-700">{p.body}</p>
+              <h3 className="mt-5 text-xl text-neutral-900">{p.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-700">{p.body}</p>
             </div>
           ))}
         </div>

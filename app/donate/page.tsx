@@ -89,7 +89,7 @@ const otherWaysToGive = [
 export default function DonatePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-burgundy-900 text-cream-50">
+      <section className="relative overflow-hidden bg-neutral-900 text-cream-50">
         <div className="absolute inset-0 opacity-[0.08]" aria-hidden>
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -102,10 +102,10 @@ export default function DonatePage() {
         </div>
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8 lg:py-28">
           <div className="flex flex-col justify-center">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Support Us &amp; Donate Now
             </p>
-            <h1 className="font-display text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
               Donate To Support The Catholic Connect Foundation
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-100/90">
@@ -113,7 +113,7 @@ export default function DonatePage() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-3">
               {beneficiaries.map((b) => (
-                <div key={b.src} className="relative aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-burgundy-700/50">
+                <div key={b.src} className="relative aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-brand-700/50">
                   <Image src={b.src} alt={b.alt} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
                 </div>
               ))}
@@ -139,10 +139,10 @@ export default function DonatePage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Other Ways To Give
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               More Paths To Make An Impact
             </h2>
           </div>
@@ -151,13 +151,13 @@ export default function DonatePage() {
               <Link
                 key={w.href}
                 href={w.href}
-                className="group flex flex-col rounded-2xl bg-cream-50 p-8 ring-1 ring-stone-warm-200 transition hover:shadow-lg hover:ring-burgundy-200"
+                className="group flex flex-col rounded-2xl bg-cream-50 p-8 ring-1 ring-neutral-200 transition hover:shadow-lg hover:ring-brand-200"
               >
-                <h3 className="font-display text-2xl text-burgundy-800 group-hover:text-burgundy-700">
+                <h3 className="text-2xl text-neutral-900 group-hover:text-brand-600">
                   {w.title}
                 </h3>
-                <p className="mt-3 flex-1 leading-relaxed text-stone-warm-700">{w.body}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-burgundy-700">
+                <p className="mt-3 flex-1 leading-relaxed text-neutral-700">{w.body}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">
                   Learn more
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
                     <path d="M3 7h8m0 0L8 4m3 3-3 3" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function DoubleYourDonationPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-burgundy-900 py-20 text-cream-50 lg:py-28">
+      <section className="relative overflow-hidden bg-neutral-900 py-20 text-cream-50 lg:py-28">
         <div className="absolute inset-0 opacity-[0.06]" aria-hidden>
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -25,18 +25,18 @@ export default function DoubleYourDonationPage() {
         </div>
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8">
           <div className="flex flex-col justify-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Employer Donation Matching
             </p>
-            <h1 className="mt-4 font-display text-4xl leading-tight md:text-5xl lg:text-6xl">
+            <h1 className="mt-4 text-4xl leading-tight md:text-5xl lg:text-6xl">
               Double Your Donation
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-100/90">
               Your company may match your donation to our nonprofit foundation. Did you know that thousands of companies match employee donations to organizations like ours?
             </p>
-            <div className="mt-7 rounded-2xl bg-burgundy-800/50 p-6 ring-1 ring-burgundy-700/50">
+            <div className="mt-7 rounded-2xl bg-neutral-800/50 p-6 ring-1 ring-brand-700/50">
               <p className="text-sm text-cream-100/85">
-                Within the last 12 months, matching gift programs helped us identify over <strong className="text-gold-300">$100,000</strong> of donations that qualify to be doubled.
+                Within the last 12 months, matching gift programs helped us identify over <strong className="text-brand-400">$100,000</strong> of donations that qualify to be doubled.
               </p>
             </div>
           </div>
@@ -49,13 +49,13 @@ export default function DoubleYourDonationPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               How It Works
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Check to see if your company will double your donation!
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-stone-warm-700">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
               Use the search tool inside the donation form to see if your company will match your donation. It will give you the forms, guidelines, and instructions you need to submit a match request to your employer.
             </p>
           </div>
@@ -78,13 +78,13 @@ export default function DoubleYourDonationPage() {
                 body: "Your donation could be doubled or tripled — multiplying every dollar that reaches those most in need.",
               },
             ].map((step, i) => (
-              <li key={step.title} className="flex gap-5 rounded-2xl bg-cream-50 p-6 ring-1 ring-stone-warm-200">
-                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-burgundy-700 font-display text-lg font-bold text-cream-50">
+              <li key={step.title} className="flex gap-5 rounded-2xl bg-cream-50 p-6 ring-1 ring-neutral-200">
+                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-brand-500 text-lg font-bold text-cream-50">
                   {i + 1}
                 </span>
                 <div>
-                  <h3 className="font-display text-xl text-burgundy-800">{step.title}</h3>
-                  <p className="mt-1 leading-relaxed text-stone-warm-700">{step.body}</p>
+                  <h3 className="text-xl text-neutral-900">{step.title}</h3>
+                  <p className="mt-1 leading-relaxed text-neutral-700">{step.body}</p>
                 </div>
               </li>
             ))}

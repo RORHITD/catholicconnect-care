@@ -25,7 +25,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-burgundy-900 py-20 text-cream-50 lg:py-28">
+    <section className="relative overflow-hidden bg-neutral-900 py-20 text-cream-50 lg:py-28">
       <div className="absolute inset-0 opacity-[0.05]" aria-hidden>
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -38,23 +38,23 @@ export default function Testimonials() {
       </div>
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">Testimonials</p>
-          <h2 className="mt-4 font-display text-4xl text-cream-50 md:text-5xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">Testimonials</p>
+          <h2 className="mt-4 text-4xl text-cream-50 md:text-5xl">
             About The Catholic Connect Foundation
           </h2>
         </div>
         <div className="mt-14 grid gap-7 md:grid-cols-3">
           {testimonials.map((t) => (
-            <figure key={t.name} className="rounded-2xl bg-burgundy-800/50 p-8 ring-1 ring-burgundy-700/50">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="text-gold-400 mb-4" aria-hidden>
+            <figure key={t.name} className="rounded-2xl bg-neutral-800/50 p-8 ring-1 ring-brand-700/50">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="text-brand-400 mb-4" aria-hidden>
                 <path
                   d="M10 8c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Zm14 0c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Z"
                   fill="currentColor"
                 />
               </svg>
               <blockquote className="text-cream-50/95 leading-relaxed">{t.quote}</blockquote>
-              <figcaption className="mt-6 flex items-center gap-3 border-t border-burgundy-700/50 pt-5">
-                <span className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-stone-warm-700">
+              <figcaption className="mt-6 flex items-center gap-3 border-t border-brand-500/50 pt-5">
+                <span className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-neutral-700">
                   <Image src={t.image} alt={t.name} fill sizes="48px" className="object-cover" />
                 </span>
                 <span>

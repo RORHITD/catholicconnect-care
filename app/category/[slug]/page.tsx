@@ -35,12 +35,12 @@ export default async function CategoryPage(props: { params: Promise<Params> }) {
 
   return (
     <>
-      <section className="bg-burgundy-900 py-16 text-cream-50 lg:py-20">
+      <section className="bg-neutral-900 py-16 text-cream-50 lg:py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <Link href="/faith-in-action" className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300 hover:text-gold-200 transition">
+          <Link href="/faith-in-action" className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400 hover:text-brand-200 transition">
             ← Back to Stories &amp; News
           </Link>
-          <h1 className="mt-4 font-display text-4xl text-cream-50 md:text-5xl lg:text-6xl">
+          <h1 className="mt-4 text-4xl text-cream-50 md:text-5xl lg:text-6xl">
             {cat.name}
           </h1>
           <p className="mt-3 text-cream-100/85">
@@ -52,7 +52,7 @@ export default async function CategoryPage(props: { params: Promise<Params> }) {
       <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {posts.length === 0 ? (
-            <p className="text-stone-warm-700">No posts yet in this category.</p>
+            <p className="text-neutral-700">No posts yet in this category.</p>
           ) : (
             <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((p) => {
@@ -61,26 +61,26 @@ export default async function CategoryPage(props: { params: Promise<Params> }) {
                   "/wp",
                 );
                 return (
-                  <article key={p.slug} className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200 transition hover:shadow-lg">
+                  <article key={p.slug} className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-lg">
                     {fm && (
-                      <Link href={`/${p.slug}`} className="relative aspect-[16/10] overflow-hidden bg-stone-warm-100">
+                      <Link href={`/${p.slug}`} className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
                         <Image src={fm} alt={decodeHtml(p.title.rendered)} fill sizes="(min-width: 1024px) 33vw, 50vw" className="object-cover transition duration-500 group-hover:scale-105" />
                       </Link>
                     )}
                     <div className="flex flex-1 flex-col p-6">
-                      <h2 className="font-display text-xl leading-snug text-burgundy-900">
-                        <Link href={`/${p.slug}`} className="hover:text-burgundy-700 transition">
+                      <h2 className="text-xl leading-snug text-neutral-900">
+                        <Link href={`/${p.slug}`} className="hover:text-brand-600 transition">
                           {decodeHtml(p.title.rendered)}
                         </Link>
                       </h2>
-                      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-stone-warm-700">
+                      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-neutral-700">
                         {plainExcerpt(p.excerpt.rendered || p.content.rendered, 200)}
                       </p>
                       <div className="mt-auto flex items-center justify-between pt-5">
-                        <Link href={`/${p.slug}`} className="text-sm font-semibold text-burgundy-700 hover:text-gold-600 transition">
+                        <Link href={`/${p.slug}`} className="text-sm font-semibold text-brand-600 hover:text-brand-600 transition">
                           Read More »
                         </Link>
-                        <time className="text-xs text-stone-warm-600">
+                        <time className="text-xs text-neutral-600">
                           {new Date(p.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
                         </time>
                       </div>

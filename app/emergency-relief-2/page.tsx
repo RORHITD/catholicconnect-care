@@ -46,22 +46,22 @@ export default function EmergencyRelief2Page() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Three ways we help
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Responding to emergencies, fast
             </h2>
           </div>
           <div className="mt-14 grid gap-7 md:grid-cols-3">
             {threeWays.map((w) => (
-              <figure key={w.title} className="overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200">
-                <div className="relative aspect-[4/3] bg-stone-warm-100">
+              <figure key={w.title} className="overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-[4/3] bg-neutral-100">
                   <Image src={w.image} alt={w.caption} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
                 </div>
                 <figcaption className="p-6">
-                  <h3 className="font-display text-xl text-burgundy-800">{w.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-stone-warm-700">{w.body}</p>
+                  <h3 className="text-xl text-neutral-900">{w.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{w.body}</p>
                 </figcaption>
               </figure>
             ))}
@@ -69,7 +69,7 @@ export default function EmergencyRelief2Page() {
           <div className="mt-12 text-center">
             <Link
               href="/emergency-relief-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-burgundy-700 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               See the Emergency Relief Fund
             </Link>

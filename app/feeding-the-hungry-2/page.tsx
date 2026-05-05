@@ -44,22 +44,22 @@ export default function FeedingTheHungry2Page() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Three ways we help
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               From sustainable farms to orphanages
             </h2>
           </div>
           <div className="mt-14 grid gap-7 md:grid-cols-3">
             {threeWays.map((w) => (
-              <article key={w.title} className="overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200">
-                <div className="relative aspect-[4/3] bg-stone-warm-100">
+              <article key={w.title} className="overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-[4/3] bg-neutral-100">
                   <Image src={w.image} alt={w.title} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-xl text-burgundy-800">{w.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-stone-warm-700">{w.body}</p>
+                  <h3 className="text-xl text-neutral-900">{w.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{w.body}</p>
                 </div>
               </article>
             ))}
@@ -67,10 +67,10 @@ export default function FeedingTheHungry2Page() {
         </div>
       </section>
 
-      <section className="bg-burgundy-900 py-20 text-cream-50 lg:py-28">
+      <section className="bg-neutral-900 py-20 text-cream-50 lg:py-28">
         <div className="mx-auto max-w-5xl px-6 text-center lg:px-8">
-          <p className="font-display text-5xl text-gold-400 md:text-7xl">45%</p>
-          <h2 className="mt-4 font-display text-3xl md:text-4xl">
+          <p className="text-5xl text-brand-400 md:text-7xl">45%</p>
+          <h2 className="mt-4 text-3xl md:text-4xl">
             of deaths among children under five are caused by malnutrition
           </h2>
           <p className="mx-auto mt-5 max-w-3xl leading-relaxed text-cream-100/85">
@@ -81,19 +81,19 @@ export default function FeedingTheHungry2Page() {
 
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
             Our Mission
           </p>
-          <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+          <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
             Mission to feed the hungry
           </h2>
-          <p className="mx-auto mt-6 text-lg leading-relaxed text-stone-warm-700">
+          <p className="mx-auto mt-6 text-lg leading-relaxed text-neutral-700">
             Our mission to feed the hungry is by working with local parishes and priests to prevent donor money from going to administrative fees of other non-profit organizations. We will vet any non-profit or feeding project before partnering with them — and we keep our donors updated as the work progresses.
           </p>
           <div className="mt-8">
             <Link
               href="/feeding-the-poor-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-burgundy-700 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               See the Feeding The Poor Fund
             </Link>

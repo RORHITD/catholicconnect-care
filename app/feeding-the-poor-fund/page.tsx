@@ -51,10 +51,10 @@ export default function FeedingThePoorFundPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               About Us
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Sustaining feeding projects, supporting children
             </h2>
           </div>

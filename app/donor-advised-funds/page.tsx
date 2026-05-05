@@ -37,41 +37,41 @@ export default function DonorAdvisedFundsPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Donor Advised Funds
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Make A Lasting Impact For The Catholic Connect Foundation
             </h2>
           </div>
           <div className="mt-14 grid gap-7 md:grid-cols-3">
             {benefits.map((b) => (
-              <article key={b.title} className="rounded-2xl bg-cream-50 p-8 ring-1 ring-stone-warm-200">
-                <h3 className="font-display text-2xl text-burgundy-800">{b.title}</h3>
-                <p className="mt-3 leading-relaxed text-stone-warm-700">{b.body}</p>
+              <article key={b.title} className="rounded-2xl bg-cream-50 p-8 ring-1 ring-neutral-200">
+                <h3 className="text-2xl text-neutral-900">{b.title}</h3>
+                <p className="mt-3 leading-relaxed text-neutral-700">{b.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
-      <section className="bg-stone-warm-50 py-20">
+      <section className="bg-neutral-50 py-20">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <h2 className="font-display text-3xl text-burgundy-900 md:text-4xl">
+          <h2 className="text-3xl text-neutral-900 md:text-4xl">
             Ready to recommend a grant?
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-stone-warm-700">
+          <p className="mt-5 text-lg leading-relaxed text-neutral-700">
             Contact us to receive our EIN and the details your DAF administrator needs to process your grant recommendation. We're grateful for your generosity.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact-us"
-              className="inline-flex items-center gap-2 rounded-full bg-burgundy-700 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               Contact Us About DAFs
             </Link>
             <Link
               href="/donate"
-              className="inline-flex items-center gap-2 rounded-full border border-burgundy-700 px-7 py-3.5 text-sm font-semibold text-burgundy-700 transition hover:bg-burgundy-50"
+              className="inline-flex items-center gap-2 rounded-full border border-brand-500 px-7 py-3.5 text-sm font-semibold text-brand-600 transition hover:bg-brand-50"
             >
               Other Ways to Give
             </Link>

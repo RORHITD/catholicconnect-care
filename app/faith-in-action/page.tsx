@@ -58,12 +58,12 @@ export default function FaithInActionPage() {
 
   return (
     <>
-      <section className="bg-burgundy-900 py-20 text-cream-50 lg:py-24">
+      <section className="bg-neutral-900 py-20 text-cream-50 lg:py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
             Stories &amp; News
           </p>
-          <h1 className="mt-4 font-display text-4xl leading-tight md:text-5xl lg:text-6xl">
+          <h1 className="mt-4 text-4xl leading-tight md:text-5xl lg:text-6xl">
             Faith in Action: Catholic Charity Bringing Hope to The World
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-cream-100/85">
@@ -77,10 +77,10 @@ export default function FaithInActionPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <Link
               href={`/${featured.slug}`}
-              className="group grid overflow-hidden rounded-3xl bg-cream-50 ring-1 ring-stone-warm-200 transition hover:shadow-xl lg:grid-cols-[1.2fr_1fr]"
+              className="group grid overflow-hidden rounded-3xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-xl lg:grid-cols-[1.2fr_1fr]"
             >
               {featured.image && (
-                <div className="relative aspect-[16/10] overflow-hidden bg-stone-warm-100 lg:aspect-auto">
+                <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 lg:aspect-auto">
                   <Image
                     src={featured.image}
                     alt={featured.imageAlt}
@@ -93,19 +93,19 @@ export default function FaithInActionPage() {
               )}
               <div className="flex flex-col justify-center p-8 lg:p-12">
                 {featured.category && (
-                  <span className="inline-flex w-fit items-center rounded-full bg-burgundy-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-burgundy-700">
+                  <span className="inline-flex w-fit items-center rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-600">
                     {featured.category.name}
                   </span>
                 )}
-                <h2 className="mt-4 font-display text-3xl leading-snug text-burgundy-900 md:text-4xl">
+                <h2 className="mt-4 text-3xl leading-snug text-neutral-900 md:text-4xl">
                   {featured.title}
                 </h2>
-                <p className="mt-4 leading-relaxed text-stone-warm-700">{featured.excerpt}</p>
+                <p className="mt-4 leading-relaxed text-neutral-700">{featured.excerpt}</p>
                 <div className="mt-6 flex items-center justify-between">
-                  <span className="text-sm font-semibold text-burgundy-700 group-hover:text-gold-600 transition">
+                  <span className="text-sm font-semibold text-brand-600 group-hover:text-brand-600 transition">
                     Read More »
                   </span>
-                  <time className="text-xs text-stone-warm-600">
+                  <time className="text-xs text-neutral-600">
                     {new Date(featured.date).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "long",
@@ -120,18 +120,18 @@ export default function FaithInActionPage() {
       )}
 
       {categories.length > 0 && (
-        <section className="border-y border-stone-warm-200 bg-stone-warm-50 py-6">
+        <section className="border-y border-neutral-200 bg-neutral-50 py-6">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-6 lg:px-8">
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-warm-600">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-600">
               Topics:
             </span>
             {categories.map((c) => (
               <Link
                 key={c.slug}
                 href={`/category/${c.slug}`}
-                className="rounded-full bg-cream-50 px-4 py-1.5 text-sm font-medium text-burgundy-800 ring-1 ring-stone-warm-200 hover:bg-burgundy-50 hover:text-burgundy-900 transition"
+                className="rounded-full bg-cream-50 px-4 py-1.5 text-sm font-medium text-neutral-900 ring-1 ring-neutral-200 hover:bg-brand-50 hover:text-neutral-900 transition"
               >
-                {c.name} <span className="text-stone-warm-500">{c.count}</span>
+                {c.name} <span className="text-neutral-500">{c.count}</span>
               </Link>
             ))}
           </div>
@@ -144,10 +144,10 @@ export default function FaithInActionPage() {
             {rest.map((p) => (
               <article
                 key={p.slug}
-                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200 transition hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-lg"
               >
                 {p.image && (
-                  <Link href={`/${p.slug}`} className="relative aspect-[16/10] overflow-hidden bg-stone-warm-100">
+                  <Link href={`/${p.slug}`} className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
                     <Image
                       src={p.image}
                       alt={p.imageAlt}
@@ -159,24 +159,24 @@ export default function FaithInActionPage() {
                 )}
                 <div className="flex flex-1 flex-col p-6">
                   {p.category && (
-                    <span className="inline-flex w-fit items-center rounded-full bg-burgundy-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-burgundy-700">
+                    <span className="inline-flex w-fit items-center rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-600">
                       {p.category.name}
                     </span>
                   )}
-                  <h3 className="mt-4 font-display text-xl leading-snug text-burgundy-900">
-                    <Link href={`/${p.slug}`} className="hover:text-burgundy-700 transition">
+                  <h3 className="mt-4 text-xl leading-snug text-neutral-900">
+                    <Link href={`/${p.slug}`} className="hover:text-brand-600 transition">
                       {p.title}
                     </Link>
                   </h3>
-                  <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-stone-warm-700">{p.excerpt}</p>
+                  <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-neutral-700">{p.excerpt}</p>
                   <div className="mt-auto flex items-center justify-between pt-5">
                     <Link
                       href={`/${p.slug}`}
-                      className="text-sm font-semibold text-burgundy-700 hover:text-gold-600 transition"
+                      className="text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
                     >
                       Read More »
                     </Link>
-                    <time className="text-xs text-stone-warm-600">
+                    <time className="text-xs text-neutral-600">
                       {new Date(p.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",

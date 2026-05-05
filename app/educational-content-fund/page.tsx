@@ -43,26 +43,26 @@ export default function EducationalContentFundPage() {
         image="/wp/wp-content/uploads/2022/12/kal-visuals-jA7iWRaJruA-unsplash-scaled.jpg"
         imageAlt="Hands holding a rosary in prayer"
       />
-      <section className="bg-stone-warm-50 py-20 lg:py-28">
+      <section className="bg-neutral-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Educational Content Fund
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Learn More About Who The Educational Content Fund Supports
             </h2>
           </div>
           <div className="mt-14 grid gap-7 md:grid-cols-2">
             {supports.map((s) => (
-              <article key={s.title} className="rounded-2xl bg-cream-50 p-8 ring-1 ring-stone-warm-200">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-burgundy-50 text-burgundy-700 ring-2 ring-gold-400">
+              <article key={s.title} className="rounded-2xl bg-cream-50 p-8 ring-1 ring-neutral-200">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-600 ring-2 ring-brand-300">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M4 5h16M4 5v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5M4 5l8 5 8-5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="mt-5 font-display text-2xl text-burgundy-800">{s.title}</h3>
-                <p className="mt-3 leading-relaxed text-stone-warm-700">{s.body}</p>
+                <h3 className="mt-5 text-2xl text-neutral-900">{s.title}</h3>
+                <p className="mt-3 leading-relaxed text-neutral-700">{s.body}</p>
               </article>
             ))}
           </div>

@@ -37,7 +37,7 @@ export default function DonorboxEmbed({
         allow="payment"
         seamless
         scrolling="no"
-        className="block w-full rounded-2xl border border-stone-warm-200 bg-cream-50 shadow-sm"
+        className="block w-full rounded-2xl border border-neutral-200 bg-cream-50 shadow-sm"
         style={{
           maxWidth: "500px",
           minWidth: "250px",

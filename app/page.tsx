@@ -185,7 +185,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-burgundy-900 text-cream-50">
+      <section className="relative min-h-[90vh] overflow-hidden bg-neutral-900 text-cream-50">
         <video
           className="absolute inset-0 h-full w-full object-cover opacity-35"
           autoPlay
@@ -196,16 +196,16 @@ export default function HomePage() {
         >
           <source src="/wp/wp-content/uploads/2022/08/pexels-tima-miroshnichenko-5988655.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-burgundy-900/85 via-burgundy-900/70 to-stone-warm-900/80" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/70 to-neutral-900/80" aria-hidden />
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-20 pb-24 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8 lg:pt-32 lg:pb-32">
           <div className="flex flex-col justify-center">
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-gold-300">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-brand-400">
               The Catholic Connect Foundation
             </p>
-            <h1 className="font-display text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
+            <h1 className="text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
               Donate Today
               <br />
-              <span className="text-gold-400">&</span> Support Our Mission
+              <span className="text-brand-400">&</span> Support Our Mission
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-100/90">
               Help Catholic priests, nuns, orphanages, and other nonprofits achieve their humanitarian and charitable missions across the globe.
@@ -213,7 +213,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold text-burgundy-900 shadow-lg transition hover:bg-gold-400"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-neutral-900 shadow-lg transition hover:bg-brand-600"
               >
                 Donate Now
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -238,13 +238,13 @@ export default function HomePage() {
       <section className="relative py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Our Initiatives
             </p>
-            <h2 className="mt-4 font-display text-4xl leading-tight text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl leading-tight text-neutral-900 md:text-5xl">
               Donate to The Catholic Connect Foundation
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-stone-warm-700">
+            <p className="mt-6 text-lg leading-relaxed text-neutral-700">
               Choose what initiatives you would like to support. Our charitable and humanitarian projects support priests, nuns, and organizations that help further our mission. Join us and make an impact today.
             </p>
           </div>
@@ -253,9 +253,9 @@ export default function HomePage() {
             {initiatives.map((it) => (
               <article
                 key={it.href}
-                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200 transition hover:shadow-xl hover:ring-burgundy-200"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-xl hover:ring-brand-200"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-stone-warm-100">
+                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
                   <Image
                     src={it.image}
                     alt={it.alt}
@@ -265,15 +265,15 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-7">
-                  <h3 className="font-display text-2xl text-burgundy-800">
+                  <h3 className="text-2xl text-neutral-900">
                     {it.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-[15px] leading-relaxed text-stone-warm-700">
+                  <p className="mt-3 flex-1 text-[15px] leading-relaxed text-neutral-700">
                     {it.blurb}
                   </p>
                   <Link
                     href={it.href}
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-burgundy-700 hover:text-gold-600 transition"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
                   >
                     {it.cta}
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -288,20 +288,20 @@ export default function HomePage() {
       </section>
 
       {/* FEEDING PROJECTS */}
-      <section className="bg-stone-warm-50 py-20 lg:py-28">
+      <section className="bg-neutral-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Feeding Projects
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Learn More About Feeding The Poor Fund
             </h2>
           </div>
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
             {feedingFeatures.map((f) => (
-              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200">
-                <div className="relative aspect-square overflow-hidden bg-stone-warm-100">
+              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-square overflow-hidden bg-neutral-100">
                   <Image
                     src={f.image}
                     alt={f.title}
@@ -311,8 +311,8 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-xl text-burgundy-800">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-stone-warm-700">{f.body}</p>
+                  <h3 className="text-xl text-neutral-900">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.body}</p>
                 </div>
               </article>
             ))}
@@ -320,7 +320,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/feeding-the-poor-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-burgundy-700 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               Support Feeding the Poor
             </Link>
@@ -332,17 +332,17 @@ export default function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Emergency Relief Fund
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Learn More About Who The Emergency Relief Fund Supports
             </h2>
           </div>
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
             {emergencyFeatures.map((f) => (
-              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200">
-                <div className="relative aspect-square overflow-hidden bg-stone-warm-100">
+              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-square overflow-hidden bg-neutral-100">
                   <Image
                     src={f.image}
                     alt={f.title}
@@ -352,8 +352,8 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-xl text-burgundy-800">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-stone-warm-700">{f.body}</p>
+                  <h3 className="text-xl text-neutral-900">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.body}</p>
                 </div>
               </article>
             ))}
@@ -361,7 +361,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/emergency-relief-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-burgundy-700 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               Support Emergency Relief
             </Link>
@@ -370,7 +370,7 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative overflow-hidden bg-burgundy-900 py-20 text-cream-50 lg:py-28">
+      <section className="relative overflow-hidden bg-neutral-900 py-20 text-cream-50 lg:py-28">
         <div className="absolute inset-0 opacity-[0.05]" aria-hidden>
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -383,17 +383,17 @@ export default function HomePage() {
         </div>
         <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Testimonials
             </p>
-            <h2 className="mt-4 font-display text-4xl text-cream-50 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-cream-50 md:text-5xl">
               About The Catholic Connect Foundation
             </h2>
           </div>
           <div className="mt-14 grid gap-7 md:grid-cols-3">
             {testimonials.map((t) => (
-              <figure key={t.name} className="rounded-2xl bg-burgundy-800/50 p-8 ring-1 ring-burgundy-700/50">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="text-gold-400 mb-4" aria-hidden>
+              <figure key={t.name} className="rounded-2xl bg-neutral-800/50 p-8 ring-1 ring-brand-700/50">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="text-brand-400 mb-4" aria-hidden>
                   <path
                     d="M10 8c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Zm14 0c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Z"
                     fill="currentColor"
@@ -402,8 +402,8 @@ export default function HomePage() {
                 <blockquote className="text-cream-50/95 leading-relaxed">
                   {t.quote}
                 </blockquote>
-                <figcaption className="mt-6 flex items-center gap-3 border-t border-burgundy-700/50 pt-5">
-                  <span className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-stone-warm-700">
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-brand-500/50 pt-5">
+                  <span className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-neutral-700">
                     <Image src={t.image} alt={t.name} fill sizes="48px" className="object-cover" />
                   </span>
                   <span>
@@ -421,23 +421,23 @@ export default function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Our Values
             </p>
-            <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
               Why Choose Our Charity
             </h2>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {whyChoose.map((w) => (
               <div key={w.title} className="text-center">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-burgundy-50 text-burgundy-700 ring-2 ring-gold-400">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-50 text-brand-600 ring-2 ring-brand-300">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     {w.icon}
                   </svg>
                 </div>
-                <h3 className="mt-5 font-display text-xl text-burgundy-800">{w.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-warm-700">{w.body}</p>
+                <h3 className="mt-5 text-xl text-neutral-900">{w.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-700">{w.body}</p>
               </div>
             ))}
           </div>
@@ -445,13 +445,13 @@ export default function HomePage() {
       </section>
 
       {/* MONTHLY DONOR CTA */}
-      <section className="bg-stone-warm-50 py-16 lg:py-24">
+      <section className="bg-neutral-50 py-16 lg:py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-burgundy-700 to-burgundy-900 p-10 text-center text-cream-50 shadow-xl md:p-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 p-10 text-center text-cream-50 shadow-xl md:p-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Recurring Giving
             </p>
-            <h2 className="mt-4 font-display text-3xl md:text-4xl">
+            <h2 className="mt-4 text-3xl md:text-4xl">
               Consider Becoming a Monthly Donor
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-cream-100/90">
@@ -460,7 +460,7 @@ export default function HomePage() {
             <div className="mt-7">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-8 py-3.5 text-sm font-semibold text-burgundy-900 shadow transition hover:bg-gold-400"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow transition hover:bg-brand-600"
               >
                 Donate &amp; Support
               </Link>
@@ -474,16 +474,16 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-burgundy-700">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
                 Stories &amp; News
               </p>
-              <h2 className="mt-4 font-display text-4xl text-burgundy-900 md:text-5xl">
+              <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
                 Be Inspired By The Catholic Connect Foundation
               </h2>
             </div>
             <Link
               href="/faith-in-action"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-burgundy-700 hover:text-gold-600 transition"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
             >
               Read Latest Stories
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -495,10 +495,10 @@ export default function HomePage() {
             {latest.map((post) => (
               <article
                 key={post.slug}
-                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-stone-warm-200 transition hover:shadow-xl"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-xl"
               >
                 {post.image && (
-                  <Link href={`/${post.slug}`} className="relative aspect-[16/10] overflow-hidden bg-stone-warm-100">
+                  <Link href={`/${post.slug}`} className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
                     <Image
                       src={post.image}
                       alt={post.title}
@@ -510,23 +510,23 @@ export default function HomePage() {
                 )}
                 <div className="flex flex-1 flex-col p-6">
                   {post.category && (
-                    <span className="inline-flex w-fit items-center rounded-full bg-burgundy-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-burgundy-700">
+                    <span className="inline-flex w-fit items-center rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-600">
                       {post.category.name}
                     </span>
                   )}
-                  <h3 className="mt-4 font-display text-xl leading-snug text-burgundy-900">
-                    <Link href={`/${post.slug}`} className="hover:text-burgundy-700 transition">
+                  <h3 className="mt-4 text-xl leading-snug text-neutral-900">
+                    <Link href={`/${post.slug}`} className="hover:text-brand-600 transition">
                       {post.title}
                     </Link>
                   </h3>
                   <div className="mt-auto flex items-center justify-between pt-5">
                     <Link
                       href={`/${post.slug}`}
-                      className="text-sm font-semibold text-burgundy-700 hover:text-gold-600 transition"
+                      className="text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
                     >
                       Read More »
                     </Link>
-                    <time className="text-xs text-stone-warm-600">
+                    <time className="text-xs text-neutral-600">
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "long",
@@ -542,13 +542,13 @@ export default function HomePage() {
       </section>
 
       {/* STATS */}
-      <section className="bg-stone-warm-900 py-20 text-cream-50 lg:py-28">
+      <section className="bg-neutral-900 py-20 text-cream-50 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Our Impact
             </p>
-            <h2 className="mt-4 font-display text-3xl text-cream-50 md:text-4xl">
+            <h2 className="mt-4 text-3xl text-cream-50 md:text-4xl">
               Since 2019, we have helped support thousands of people
             </h2>
             <p className="mt-4 text-cream-100/85">
@@ -557,8 +557,8 @@ export default function HomePage() {
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((s) => (
-              <div key={s.value} className="rounded-2xl bg-stone-warm-800/60 p-7 ring-1 ring-stone-warm-700">
-                <div className="font-display text-5xl text-gold-400">{s.value}</div>
+              <div key={s.value} className="rounded-2xl bg-neutral-800/60 p-7 ring-1 ring-neutral-700">
+                <div className="text-5xl text-brand-400">{s.value}</div>
                 <p className="mt-3 text-sm leading-relaxed text-cream-100/85">{s.label}</p>
               </div>
             ))}
@@ -569,10 +569,10 @@ export default function HomePage() {
       {/* NEWSLETTER */}
       <section className="bg-cream-100 py-16">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <h2 className="font-display text-3xl text-burgundy-900 md:text-4xl">
+          <h2 className="text-3xl text-neutral-900 md:text-4xl">
             Join Our Newsletter
           </h2>
-          <p className="mt-3 text-stone-warm-700">
+          <p className="mt-3 text-neutral-700">
             Subscribe to get notified of our latest events and stories.
           </p>
           <form
@@ -585,11 +585,11 @@ export default function HomePage() {
               name="email"
               required
               placeholder="Email address"
-              className="flex-1 rounded-full border border-stone-warm-300 bg-cream-50 px-5 py-3 text-sm text-ink placeholder:text-stone-warm-500 focus:border-burgundy-700 focus:outline-none focus:ring-2 focus:ring-burgundy-700/20"
+              className="flex-1 rounded-full border border-neutral-300 bg-cream-50 px-5 py-3 text-sm text-ink placeholder:text-neutral-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-700/20"
             />
             <button
               type="submit"
-              className="rounded-full bg-burgundy-700 px-6 py-3 text-sm font-semibold text-cream-50 transition hover:bg-burgundy-800"
+              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               Subscribe
             </button>
