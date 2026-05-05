@@ -37,17 +37,17 @@
   --color-gold-800: #5d3a07;
   --color-gold-900: #3a2405;
 
-  /* Cool neutrals (replaces old stone-warm — cleaner, more modern) */
-  --color-neutral-50: #f8fafc;
-  --color-neutral-100: #f1f5f9;
-  --color-neutral-200: #e2e8f0;
-  --color-neutral-300: #cbd5e1;
-  --color-neutral-400: #94a3b8;
-  --color-neutral-500: #64748b;
-  --color-neutral-600: #475569;
-  --color-neutral-700: #334155;
-  --color-neutral-800: #1e293b;
-  --color-neutral-900: #0f172a;
+  /* True grayscale neutrals — matches live site's pure black dark sections */
+  --color-neutral-50: #f8f8f8;
+  --color-neutral-100: #f1f1f1;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #1a1a1a;
+  --color-neutral-900: #000000;
 
   /* Page surfaces */
   --color-cream-50: #ffffff;
