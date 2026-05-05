@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Fraunces } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site/site-header";
 import SiteFooter from "@/components/site/site-footer";
@@ -7,7 +7,15 @@ import SiteFooter from "@/components/site/site-footer";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  axes: ["SOFT", "opsz"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -35,8 +43,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-white text-ink">
+    <html
+      lang="en"
+      className={`${poppins.variable} ${fraunces.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-paper text-ink">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
