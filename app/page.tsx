@@ -229,7 +229,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end" id="donate">
-            <DonorboxEmbed height={760} />
+            <DonorboxEmbed />
           </div>
         </div>
       </section>

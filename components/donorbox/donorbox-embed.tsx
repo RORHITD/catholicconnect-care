@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 type Props = {
   campaign?: string;
   defaultInterval?: "o" | "w" | "m";
@@ -12,7 +14,7 @@ export default function DonorboxEmbed({
   campaign = "the-catholic-connect-foundation",
   defaultInterval = "m",
   amount = 20,
-  height = 900,
+  height = 1100,
   title = "Donate to The Catholic Connect Foundation",
 }: Props) {
   const params = new URLSearchParams();
@@ -21,22 +23,29 @@ export default function DonorboxEmbed({
   const src = `https://donorbox.org/embed/${campaign}?${params.toString()}`;
 
   return (
-    <div className="w-full">
+    <>
+      <Script
+        src="https://donorbox.org/widget.js"
+        strategy="lazyOnload"
+        // @ts-expect-error — non-standard Donorbox attribute
+        paypalexpress="true"
+      />
       <iframe
         src={src}
         title={title}
         name="donorbox"
-        seamless
         allow="payment"
+        seamless
         scrolling="no"
-        className="w-full rounded-2xl border border-stone-warm-200 bg-cream-50 shadow-sm"
+        className="block w-full rounded-2xl border border-stone-warm-200 bg-cream-50 shadow-sm"
         style={{
           maxWidth: "500px",
           minWidth: "250px",
           maxHeight: "none",
           minHeight: `${height}px`,
+          width: "100%",
         }}
       />
-    </div>
+    </>
   );
 }

@@ -41,7 +41,7 @@ export default function DoubleYourDonationPage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed height={760} />
+            <DonorboxEmbed />
           </div>
         </div>
       </section>
