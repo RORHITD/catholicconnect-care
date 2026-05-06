@@ -1,469 +1,595 @@
 import Image from "next/image";
 import Link from "next/link";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
-import {
-  SectionMark,
-  Dateline,
-  PullQuote,
-  FigureCaption,
-  Hairline,
-  BigNumeral,
-  EditorialButton,
-} from "@/components/editorial";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml } from "@/lib/wp-utils";
 
 const initiatives = [
   {
-    no: "01",
     href: "/feeding-the-poor-fund",
-    title: "Feeding the Poor Fund",
-    body:
-      "Sustainable feeding projects—chicken farms, gardens, orphanage kitchens—that nourish families and grow with the communities they serve.",
+    title: "Feeding The Poor Fund",
     image: "/wp/wp-content/uploads/2022/07/Fr-Deus-Chickens.png",
-    caption: "Fr. Deus oversees the chicken farm in Uganda — a sustainable feeding project our donors support directly.",
-    credit: "Photograph from the field",
+    alt: "Fr. Deus chicken farm — sustainable feeding project",
+    blurb:
+      "Donate to support sustainable feeding projects that provide adequate nutrition to families and children that are malnourished.",
+    cta: "Learn More & Support",
   },
   {
-    no: "02",
     href: "/educational-content-fund",
     title: "Educational Content Fund",
-    body:
-      "Funding parishes and ministries to produce educational content that forms faith, illuminates need, and turns awareness into action.",
     image: "/wp/wp-content/uploads/2022/12/kal-visuals-jA7iWRaJruA-unsplash-scaled.jpg",
-    caption: "Hands at prayer — a moment of devotion captured in the work that educational content seeks to share.",
-    credit: "Photograph by Kal Visuals",
+    alt: "Hands holding rosary in prayer",
+    blurb:
+      "We support educational content so we can educate, empower, and help people commit their time and resources to helping others.",
+    cta: "Donate & Support",
   },
   {
-    no: "03",
     href: "/emergency-relief-fund",
     title: "Emergency Relief Fund",
-    body:
-      "When natural disasters, terror attacks, or medical crises strike, we get aid moving through trusted Catholic partners on the ground.",
     image: "/wp/wp-content/uploads/2022/07/Sri-Lanka-Bombing-The-Catholic-Connect-Foundation-Emergency-Relief-2.png",
-    caption: "Sri Lanka, Easter 2019 — the bombings of three churches; the families of the deceased received emergency support.",
-    credit: "From the relief fund archive",
+    alt: "Emergency relief — Sri Lanka bombing response",
+    blurb:
+      "We help support emergency relief projects including assisting people in medical need, assisting victims of terror attacks, and more.",
+    cta: "Learn More & Support",
   },
 ];
 
-const pillars = [
+const feedingFeatures = [
   {
-    label: "Vetted",
-    body: "Each grant applicant is vetted directly. Donors know exactly where their gift goes and what it accomplishes.",
+    image: "/wp/wp-content/uploads/2022/07/Fr-Deus-Chickens-2.png",
+    title: "Chicken Farms",
+    body: "The feeding projects we support many times try to achieve optimal sustainability so they can keep growing and sustaining their communities for the long-term.",
   },
   {
-    label: "Sustainable",
-    body: "We back projects with a clear path to long-term self-sufficiency — not perpetual aid dependence.",
+    image: "/wp/wp-content/uploads/2022/07/Fr-Deus-Educating-Children-1.png",
+    title: "Sustainable Growth",
+    body: "“Give a man a fish, and you feed him for a day; show him how to catch fish, and you feed him for a lifetime.”",
   },
   {
-    label: "Maximum Impact",
-    body: "From feeding to faith formation, every dollar is directed where it can do the most measurable good.",
+    image: "/wp/wp-content/uploads/2022/07/Copy-of-Sisters-Franiscan-Minorees-The-Catholic-Connect-Foundation.png",
+    title: "Supporting Orphanages",
+    body: "We help support multiple orphanages across the globe and we are open to receiving requests from more orphanages.",
   },
   {
-    label: "Immediate Need",
-    body: "Emergencies don't wait. Our reserves and partners let us move funding within hours when crises hit.",
+    image: "/wp/wp-content/uploads/2022/07/Fr-Deus-Chickens-3.png",
+    title: "Supporting Children",
+    body: "Not all of our feeding the poor fund goes to orphanages. Some projects consist of helping buy food for organizations to keep feeding their youth.",
   },
 ];
 
-const testimonial = {
-  quote:
-    "Thank you so much my brothers and sisters for the money. You are a blessing to our children in Uganda. Many blessings to this ministry.",
-  attribution: "Fr. Deus",
-  role: "Catholic Priest, Uganda — recipient of the Feeding the Poor Fund",
-};
+const emergencyFeatures = [
+  {
+    image: "/wp/wp-content/uploads/2022/07/Sri-Lanka-Bombing-The-Catholic-Connect-Foundation-Emergency-Relief-2.png",
+    title: "Church Attacks",
+    body: "Our emergency relief fund has supported and will keep supporting churches who are attacked or people who are injured during attacks on churches across the globe.",
+  },
+  {
+    image: "/wp/wp-content/uploads/2022/07/Typhoon-Philippines-The-Catholic-Connect-Foundation.png",
+    title: "Natural Disasters",
+    body: "We will keep providing assistance for those most in need while hit by natural disasters. Many times, communities flood and families have a hard time getting by, we want to be there for them.",
+  },
+  {
+    image: "/wp/wp-content/uploads/2022/07/Fr-Deus-Chickens-6.png",
+    title: "Medical Emergencies",
+    body: "Whether it is a baby in need, an orphan, a child, or adults that experience unexpected medical emergencies, we want to be there for them and provide assistance to them and their families.",
+  },
+  {
+    image: "/wp/wp-content/uploads/2022/12/sam-mcghee-KieCLNzKoBo-unsplash-scaled.jpg",
+    title: "Family Emergencies",
+    body: "We have helped children that unexpectedly lose their parents and provided support for the family members that support those children. We continue to be open to helping more families in emergency situations.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Thank you so much my brothers and sisters for the money. You are a blessing to our Children in Uganda. Many blessings to this ministry!",
+    name: "Fr. Deus",
+    role: "Catholic Priest Serving The Poor In Uganda Through His Orphanage",
+    image: "/wp/wp-content/uploads/2022/07/965092.jpg",
+  },
+  {
+    quote:
+      "Kindly convey my sincere gratitude to all those who contributed towards this fund [to help the families of the deceased] by the senseless attack on Easter Sunday.",
+    name: "Cardinal Albert Malcolm Ranjith",
+    role: "Metropolitan Archbishop of Colombo",
+    image: "/wp/wp-content/uploads/2022/07/eknswc0qxz8.jpg",
+  },
+  {
+    quote: "May the Lord bless your wonderful work — may He bless your many donors. Sincerely in our Lord",
+    name: "Bishop Graham Rose",
+    role: "Bishop Of The Diocese Of Dundee In South Africa",
+    image: "/wp/wp-content/uploads/2022/07/3wgktdw7xye.jpg",
+  },
+];
+
+const whyChoose = [
+  {
+    title: "Vetted",
+    body:
+      "We vet each applicant of our grants. That way our donors know their donation is creating the maximum positive impact. We love helping people and organizations that make a long lasting impact.",
+    icon: (
+      <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4Z M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+    ),
+  },
+  {
+    title: "Sustainable",
+    body:
+      "We love seeing projects that show a sustainable way for growth whether it is through growing an audience for educational efforts or supporting orphanages that create a sustainable food source.",
+    icon: (
+      <path d="M12 3a9 9 0 0 1 9 9c0 4-3 7-7 7M12 21a9 9 0 0 1-9-9c0-4 3-7 7-7M8 8l4-4M16 16l-4 4" strokeLinecap="round" strokeLinejoin="round" />
+    ),
+  },
+  {
+    title: "Maximum Impact",
+    body:
+      "Whatever project we end up supporting, we will ensure that it will have maximum impact whether it is content to educate people or money to fund children's education.",
+    icon: (
+      <path d="M12 2v20M5 9l7-7 7 7M19 15l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" />
+    ),
+  },
+  {
+    title: "Immediate Need",
+    body:
+      "We prioritize projects that need emergency funds to continue their good work. Many times these projects focus on serving children that are hungry, in medical emergencies, or projects that may educate people through enriching content.",
+    icon: (
+      <path d="M12 6v6l4 2M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" strokeLinecap="round" strokeLinejoin="round" />
+    ),
+  },
+];
 
 const stats = [
-  { value: "776+", label: "children supported and cared for through our donors' generosity." },
-  { value: "359+", label: "children helped through education, faith formation, and tuition coverage." },
-  { value: "7M+", label: "Catholics reached across the globe through educational content channels." },
-  { value: "100%", label: "of executive staff are unpaid volunteers — every dollar goes to the mission." },
+  {
+    value: "776+",
+    label: "children supported and cared for through our donors' support.",
+  },
+  {
+    value: "359+",
+    label: "children helped through education, faith formation, and tuition coverage.",
+  },
+  {
+    value: "7M+",
+    label:
+      "Catholics we reach across the globe through online channels because of the Catholic community that helps share and empower our mission.",
+  },
+  {
+    value: "100%",
+    label: "of our executive staff is not paid — we believe in this mission.",
+  },
 ];
 
 function getLatestPosts(limit = 3) {
-  return [...postsData]
+  const sorted = [...postsData]
     .filter((p) => p.status === "publish")
     .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, limit)
-    .map((p) => {
-      const cat = p._embedded?.["wp:term"]?.[0]?.[0];
-      const featured = p._embedded?.["wp:featuredmedia"]?.[0];
-      const localImage = featured?.source_url
-        ?.replace(/^https?:\/\/(www\.)?catholicconnect\.care/, "/wp")
-        ?? null;
-      return {
-        slug: p.slug,
-        title: decodeHtml(p.title.rendered),
-        date: p.date,
-        category: cat ? { name: cat.name, slug: cat.slug } : null,
-        image: localImage,
-      };
-    });
+    .slice(0, limit);
+  return sorted.map((p) => {
+    const cat = p._embedded?.["wp:term"]?.[0]?.[0];
+    const featured = p._embedded?.["wp:featuredmedia"]?.[0];
+    const localImage = featured?.source_url
+      ?.replace(/^https?:\/\/(www\.)?catholicconnect\.care/, "/wp")
+      ?? null;
+    return {
+      slug: p.slug,
+      title: decodeHtml(p.title.rendered),
+      date: p.date,
+      category: cat ? { name: cat.name, slug: cat.slug } : null,
+      image: localImage,
+    };
+  });
 }
 
 export default function HomePage() {
   const latest = getLatestPosts(3);
-  const [lead, ...followups] = latest;
 
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-neutral-900 text-white">
+      <section className="relative min-h-[90vh] overflow-hidden bg-neutral-900 text-cream-50">
         <video
-          className="absolute inset-0 h-full w-full object-cover opacity-25"
+          className="absolute inset-0 h-full w-full object-cover opacity-35"
           autoPlay
           muted
           loop
           playsInline
-          aria-hidden
+          poster="/wp/wp-content/uploads/2022/07/Rectangle-5209.png"
         >
           <source src="/wp/wp-content/uploads/2022/08/pexels-tima-miroshnichenko-5988655.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/80 to-neutral-900/30" aria-hidden />
-        <div className="relative mx-auto grid max-w-[1400px] gap-y-12 gap-x-12 px-6 pt-16 pb-20 lg:grid-cols-12 lg:gap-x-16 lg:px-12 lg:pt-24 lg:pb-28">
-          <div className="lg:col-span-7 flex flex-col justify-between">
-            <Dateline
-              variant="dark"
-              items={["Volume V", "No. 04", "Spring Edition", "Mission Brief"]}
-            />
-            <div className="mt-12 lg:mt-20">
-              <h1 className="editorial-display text-[16vw] leading-[0.92] sm:text-7xl md:text-8xl lg:text-[112px]">
-                Donate today
-                <span className="block">
-                  <em className="not-italic text-brand-400 font-light">&</em>{" "}
-                  <span className="italic font-light">support</span>
-                </span>
-                <span className="block">our mission.</span>
-              </h1>
-              <div className="mt-10 grid gap-8 sm:grid-cols-[auto_1fr] sm:items-start">
-                <span aria-hidden className="hidden sm:block h-px w-12 bg-brand-400 mt-3" />
-                <p className="font-editorial italic text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed">
-                  Helping Catholic priests, nuns, orphanages, and lay-led ministries
-                  carry out their humanitarian and charitable missions across the globe.
-                </p>
-              </div>
-              <div className="mt-12 flex flex-wrap items-center gap-6">
-                <EditorialButton href="/donate" size="lg" variant="primary">
-                  Donate Now
-                </EditorialButton>
-                <EditorialButton href="/faith-in-action" size="lg" variant="ghost-dark">
-                  Read the Stories
-                </EditorialButton>
-              </div>
-            </div>
-            <div className="mt-16 hidden lg:flex items-end gap-6 text-white/55">
-              <span className="small-caps">Scroll</span>
-              <span aria-hidden className="block h-px w-20 bg-white/30" />
-              <span className="font-editorial italic text-white/70">— Spring 2026</span>
-            </div>
-          </div>
-
-          <div className="lg:col-span-5 flex justify-center lg:justify-end" id="donate">
-            <div className="w-full max-w-[500px]">
-              <div className="mb-3 flex items-center justify-between text-white/70 small-caps">
-                <span>Give Online</span>
-                <span className="font-editorial italic normal-case tracking-normal text-sm text-white/55">
-                  secure · monthly
-                </span>
-              </div>
-              <DonorboxEmbed />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MISSION — alternating editorial rows */}
-      <section className="bg-paper py-24 lg:py-32">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="grid gap-10 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <SectionMark number="01" label="Three Pillars" />
-              <h2 className="mt-8 editorial-display text-5xl md:text-6xl">
-                We give to the people who give first.
-              </h2>
-              <p className="mt-8 max-w-md text-base leading-relaxed text-neutral-700">
-                Three funds, each direct, each accountable. Choose where your generosity
-                lands — or split it across all three.
-              </p>
-            </div>
-            <div className="lg:col-span-8">
-              <Hairline />
-              <div className="divide-y divide-neutral-300">
-                {initiatives.map((it) => (
-                  <article
-                    key={it.href}
-                    className="grid gap-8 py-12 md:grid-cols-12 md:gap-10 first:pt-12"
-                  >
-                    <div className="md:col-span-2 flex md:flex-col gap-4 items-baseline md:items-start">
-                      <span className="number-display text-6xl text-ink">{it.no}</span>
-                      <span className="small-caps text-neutral-500">A Fund</span>
-                    </div>
-                    <div className="md:col-span-5 flex flex-col">
-                      <h3 className="font-editorial text-3xl font-medium leading-tight text-ink md:text-[34px]">
-                        <Link href={it.href} className="link-editorial">
-                          {it.title}
-                        </Link>
-                      </h3>
-                      <p className="mt-5 text-[15px] leading-relaxed text-neutral-700">
-                        {it.body}
-                      </p>
-                      <div className="mt-7">
-                        <EditorialButton href={it.href} variant="ghost-light">
-                          Support {it.no}
-                        </EditorialButton>
-                      </div>
-                    </div>
-                    <figure className="md:col-span-5">
-                      <div className="relative aspect-[5/4] overflow-hidden bg-neutral-100">
-                        <Image
-                          src={it.image}
-                          alt=""
-                          fill
-                          sizes="(min-width: 1024px) 35vw, 100vw"
-                          className="object-cover transition-transform duration-700 hover:scale-105"
-                        />
-                      </div>
-                      <FigureCaption caption={it.caption} credit={it.credit} />
-                    </figure>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL — single full-bleed pull quote */}
-      <section className="bg-paper-warm py-24 lg:py-32">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
-          <div className="mb-12">
-            <SectionMark number="02" label="From Those We Serve" />
-          </div>
-          <PullQuote {...testimonial} />
-        </div>
-      </section>
-
-      {/* PILLARS — typographic, no icons */}
-      <section className="py-24 lg:py-32">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="grid gap-10 lg:grid-cols-12 mb-16">
-            <div className="lg:col-span-5 lg:col-start-1">
-              <SectionMark number="03" label="Why Choose Us" />
-              <h2 className="mt-8 editorial-display text-5xl md:text-6xl">
-                A standard of trust, not a list of features.
-              </h2>
-            </div>
-            <div className="lg:col-span-6 lg:col-start-7 self-end">
-              <p className="font-editorial italic text-xl leading-relaxed text-neutral-700">
-                Four commitments that decide which projects we back —
-                and which we politely decline.
-              </p>
-            </div>
-          </div>
-          <Hairline />
-          <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            {pillars.map((p, i) => (
-              <li
-                key={p.label}
-                className={`p-8 md:p-10 ${i !== pillars.length - 1 ? "lg:border-r border-neutral-200" : ""} ${i < pillars.length - 1 ? "border-b lg:border-b-0 border-neutral-200" : ""}`}
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/70 to-neutral-900/80" aria-hidden />
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-20 pb-24 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8 lg:pt-32 lg:pb-32">
+          <div className="flex flex-col justify-center">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-brand-400">
+              The Catholic Connect Foundation
+            </p>
+            <h1 className="text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
+              Donate Today
+              <br />
+              <span className="text-brand-400">&</span> Support Our Mission
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-100/90">
+              Help Catholic priests, nuns, orphanages, and other nonprofits achieve their humanitarian and charitable missions across the globe.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/donate"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-neutral-900 shadow-lg transition hover:bg-brand-600"
               >
-                <span className="number-display text-3xl text-brand-500">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-6 font-editorial text-2xl font-medium text-ink">
-                  {p.label}.
-                </h3>
-                <p className="mt-4 text-[15px] leading-relaxed text-neutral-700">
-                  {p.body}
-                </p>
-              </li>
-            ))}
-          </ol>
-          <Hairline />
-        </div>
-      </section>
-
-      {/* STATS — number-led editorial */}
-      <section className="bg-neutral-900 py-24 text-white lg:py-32">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="grid gap-10 lg:grid-cols-12 mb-20">
-            <div className="lg:col-span-6">
-              <SectionMark number="04" label="Since 2019" variant="dark" />
-              <h2 className="mt-8 editorial-display text-5xl md:text-6xl">
-                <span className="italic font-light">Numbers,</span>{" "}
-                <span className="font-light">but a person behind every one.</span>
-              </h2>
-            </div>
-            <div className="lg:col-span-5 lg:col-start-8 self-end">
-              <p className="font-editorial italic text-xl text-white/75 leading-relaxed">
-                Six years of grants tell a story we are proud of, and one we know
-                is far from finished.
-              </p>
-            </div>
-          </div>
-          <Hairline variant="dark" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s, i) => (
-              <div
-                key={s.value}
-                className={`p-8 md:p-10 ${i !== stats.length - 1 ? "lg:border-r border-white/15" : ""} ${i < stats.length - 1 ? "border-b lg:border-b-0 border-white/15" : ""}`}
-              >
-                <BigNumeral value={s.value} label={s.label} variant="dark" />
-              </div>
-            ))}
-          </div>
-          <Hairline variant="dark" />
-          <div className="mt-16 text-center">
-            <EditorialButton href="/donate" variant="ghost-dark" size="lg">
-              Become a monthly donor
-            </EditorialButton>
-          </div>
-        </div>
-      </section>
-
-      {/* LATEST STORIES — 1 lead + 2 followups */}
-      {latest.length > 0 && (
-        <section className="py-24 lg:py-32">
-          <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-            <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
-              <div>
-                <SectionMark number="05" label="Stories & News" />
-                <h2 className="mt-8 editorial-display text-5xl md:text-6xl max-w-2xl">
-                  Inspired by faith, lived in action.
-                </h2>
-              </div>
+                Donate Now
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+                  <path d="M3 7h8m0 0L8 4m3 3-3 3" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+                </svg>
+              </Link>
               <Link
                 href="/faith-in-action"
-                className="small-caps text-ink link-editorial inline-flex items-center gap-3"
+                className="inline-flex items-center gap-2 rounded-full border border-cream-100/30 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:border-cream-100/60 hover:bg-cream-50/5"
               >
-                The Archive
-                <span aria-hidden className="block h-px w-8 bg-current" />
+                Read Our Stories
               </Link>
             </div>
-            <Hairline />
-            {lead && (
-              <article className="grid gap-10 py-12 lg:grid-cols-12 lg:gap-16">
-                {lead.image && (
-                  <Link href={`/${lead.slug}`} className="lg:col-span-7 block">
-                    <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
-                      <Image
-                        src={lead.image}
-                        alt=""
-                        fill
-                        priority
-                        sizes="(min-width: 1024px) 60vw, 100vw"
-                        className="object-cover transition-transform duration-700 hover:scale-[1.03]"
-                      />
-                    </div>
-                    <FigureCaption
-                      caption={lead.title}
-                      credit={lead.category?.name ? `Filed: ${lead.category.name}` : undefined}
+          </div>
+          <div className="flex justify-center lg:justify-end" id="donate">
+            <DonorboxEmbed />
+          </div>
+        </div>
+      </section>
+
+      {/* INTRO + INITIATIVES */}
+      <section className="relative py-20 lg:py-28">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+              Our Initiatives
+            </p>
+            <h2 className="mt-4 text-4xl leading-tight text-neutral-900 md:text-5xl">
+              Donate to The Catholic Connect Foundation
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-neutral-700">
+              Choose what initiatives you would like to support. Our charitable and humanitarian projects support priests, nuns, and organizations that help further our mission. Join us and make an impact today.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-7 md:grid-cols-3">
+            {initiatives.map((it) => (
+              <article
+                key={it.href}
+                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-xl hover:ring-brand-200"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                  <Image
+                    src={it.image}
+                    alt={it.alt}
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-7">
+                  <h3 className="text-2xl text-neutral-900">
+                    {it.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-[15px] leading-relaxed text-neutral-700">
+                    {it.blurb}
+                  </p>
+                  <Link
+                    href={it.href}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
+                  >
+                    {it.cta}
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+                      <path d="M3 7h8m0 0L8 4m3 3-3 3" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+                    </svg>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FEEDING PROJECTS */}
+      <section className="bg-neutral-50 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+              Feeding Projects
+            </p>
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              Learn More About Feeding The Poor Fund
+            </h2>
+          </div>
+          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            {feedingFeatures.map((f) => (
+              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-square overflow-hidden bg-neutral-100">
+                  <Image
+                    src={f.image}
+                    alt={f.title}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl text-neutral-900">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/feeding-the-poor-fund"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+            >
+              Support Feeding the Poor
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* EMERGENCY RELIEF */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+              Emergency Relief Fund
+            </p>
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              Learn More About Who The Emergency Relief Fund Supports
+            </h2>
+          </div>
+          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            {emergencyFeatures.map((f) => (
+              <article key={f.title} className="flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200">
+                <div className="relative aspect-square overflow-hidden bg-neutral-100">
+                  <Image
+                    src={f.image}
+                    alt={f.title}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl text-neutral-900">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/emergency-relief-fund"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+            >
+              Support Emergency Relief
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="relative overflow-hidden bg-neutral-900 py-20 text-cream-50 lg:py-28">
+        <div className="absolute inset-0 opacity-[0.05]" aria-hidden>
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="testi-cross" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M50 25v50M25 50h50" stroke="currentColor" strokeWidth="1" fill="none" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#testi-cross)" />
+          </svg>
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
+              Testimonials
+            </p>
+            <h2 className="mt-4 text-4xl text-cream-50 md:text-5xl">
+              About The Catholic Connect Foundation
+            </h2>
+          </div>
+          <div className="mt-14 grid gap-7 md:grid-cols-3">
+            {testimonials.map((t) => (
+              <figure key={t.name} className="rounded-2xl bg-neutral-800/50 p-8 ring-1 ring-brand-700/50">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="text-brand-400 mb-4" aria-hidden>
+                  <path
+                    d="M10 8c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Zm14 0c-3 0-6 2-6 6 0 3 2 5 5 5 0 3-2 5-4 6l1 2c5-1 8-5 8-12 0-4-2-7-4-7Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <blockquote className="text-cream-50/95 leading-relaxed">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-brand-500/50 pt-5">
+                  <span className="relative h-12 w-12 flex-none overflow-hidden rounded-full bg-neutral-700">
+                    <Image src={t.image} alt={t.name} fill sizes="48px" className="object-cover" />
+                  </span>
+                  <span>
+                    <span className="block font-semibold text-cream-50">{t.name}</span>
+                    <span className="block text-xs text-cream-100/70">{t.role}</span>
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+              Our Values
+            </p>
+            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              Why Choose Our Charity
+            </h2>
+          </div>
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {whyChoose.map((w) => (
+              <div key={w.title} className="text-center">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-50 text-brand-600 ring-2 ring-brand-300">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    {w.icon}
+                  </svg>
+                </div>
+                <h3 className="mt-5 text-xl text-neutral-900">{w.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-700">{w.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MONTHLY DONOR CTA */}
+      <section className="bg-neutral-50 py-16 lg:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 p-10 text-center text-cream-50 shadow-xl md:p-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
+              Recurring Giving
+            </p>
+            <h2 className="mt-4 text-3xl md:text-4xl">
+              Consider Becoming a Monthly Donor
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-cream-100/90">
+              Our ongoing missions are possible through the generosity of our recurring donor base. It's the way we know how many projects we can sustainably support. If you become a monthly donor of even $5/mo, it helps us keep providing continuous support for those who seriously need our help. God bless you!
+            </p>
+            <div className="mt-7">
+              <Link
+                href="/donate"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow transition hover:bg-brand-600"
+              >
+                Donate &amp; Support
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LATEST STORIES */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+                Stories &amp; News
+              </p>
+              <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+                Be Inspired By The Catholic Connect Foundation
+              </h2>
+            </div>
+            <Link
+              href="/faith-in-action"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
+            >
+              Read Latest Stories
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+                <path d="M3 7h8m0 0L8 4m3 3-3 3" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+              </svg>
+            </Link>
+          </div>
+          <div className="mt-12 grid gap-7 md:grid-cols-3">
+            {latest.map((post) => (
+              <article
+                key={post.slug}
+                className="group flex flex-col overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-neutral-200 transition hover:shadow-xl"
+              >
+                {post.image && (
+                  <Link href={`/${post.slug}`} className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-cover transition duration-500 group-hover:scale-105"
                     />
                   </Link>
                 )}
-                <div className="lg:col-span-5 flex flex-col justify-center">
-                  {lead.category && (
-                    <span className="small-caps text-brand-500 mb-5">
-                      Filed in {lead.category.name}
+                <div className="flex flex-1 flex-col p-6">
+                  {post.category && (
+                    <span className="inline-flex w-fit items-center rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-600">
+                      {post.category.name}
                     </span>
                   )}
-                  <h3 className="font-editorial text-3xl md:text-4xl font-medium leading-tight">
-                    <Link href={`/${lead.slug}`} className="link-editorial">
-                      {lead.title}
+                  <h3 className="mt-4 text-xl leading-snug text-neutral-900">
+                    <Link href={`/${post.slug}`} className="hover:text-brand-600 transition">
+                      {post.title}
                     </Link>
                   </h3>
-                  <time className="mt-6 small-caps text-neutral-500">
-                    {new Date(lead.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </time>
-                  <div className="mt-8">
-                    <EditorialButton href={`/${lead.slug}`} variant="ghost-light">
-                      Read the story
-                    </EditorialButton>
+                  <div className="mt-auto flex items-center justify-between pt-5">
+                    <Link
+                      href={`/${post.slug}`}
+                      className="text-sm font-semibold text-brand-600 hover:text-brand-600 transition"
+                    >
+                      Read More »
+                    </Link>
+                    <time className="text-xs text-neutral-600">
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
                   </div>
                 </div>
               </article>
-            )}
-            {followups.length > 0 && (
-              <>
-                <Hairline />
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                  {followups.map((p, i) => (
-                    <article
-                      key={p.slug}
-                      className={`py-10 md:py-12 grid grid-cols-[auto_1fr] gap-6 ${i === 0 ? "md:pr-10 md:border-r md:border-neutral-200" : "md:pl-10"} ${i === 0 ? "border-b md:border-b-0 border-neutral-200" : ""}`}
-                    >
-                      {p.image && (
-                        <Link
-                          href={`/${p.slug}`}
-                          className="relative block h-24 w-24 md:h-32 md:w-32 overflow-hidden bg-neutral-100 shrink-0"
-                        >
-                          <Image
-                            src={p.image}
-                            alt=""
-                            fill
-                            sizes="128px"
-                            className="object-cover"
-                          />
-                        </Link>
-                      )}
-                      <div className="flex flex-col justify-center">
-                        {p.category && (
-                          <span className="small-caps text-brand-500">{p.category.name}</span>
-                        )}
-                        <h3 className="mt-3 font-editorial text-xl font-medium leading-tight">
-                          <Link href={`/${p.slug}`} className="link-editorial">
-                            {p.title}
-                          </Link>
-                        </h3>
-                        <time className="mt-3 small-caps text-neutral-500">
-                          {new Date(p.date).toLocaleDateString("en-US", {
-                            year: "numeric",
-                            month: "short",
-                            day: "numeric",
-                          })}
-                        </time>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-                <Hairline />
-              </>
-            )}
+            ))}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
+
+      {/* STATS */}
+      <section className="bg-neutral-900 py-20 text-cream-50 lg:py-28">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
+              Our Impact
+            </p>
+            <h2 className="mt-4 text-3xl text-cream-50 md:text-4xl">
+              Since 2019, we have helped support thousands of people
+            </h2>
+            <p className="mt-4 text-cream-100/85">
+              especially children in extreme poverty. Our goal is to support those most in need.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((s) => (
+              <div key={s.value} className="rounded-2xl bg-neutral-800/60 p-7 ring-1 ring-neutral-700">
+                <div className="text-5xl text-brand-400">{s.value}</div>
+                <p className="mt-3 text-sm leading-relaxed text-cream-100/85">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* NEWSLETTER */}
-      <section className="bg-paper-warm py-20 lg:py-24">
-        <div className="mx-auto max-w-3xl px-6 lg:px-12">
-          <SectionMark number="—" label="The Dispatch" />
-          <h2 className="mt-6 editorial-display text-4xl md:text-5xl">
-            A short letter, monthly.
+      <section className="bg-cream-100 py-16">
+        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
+          <h2 className="text-3xl text-neutral-900 md:text-4xl">
+            Join Our Newsletter
           </h2>
-          <p className="mt-5 font-editorial italic text-lg text-neutral-700 max-w-md">
-            Stories from the field, prayer requests, project updates — and nothing else.
+          <p className="mt-3 text-neutral-700">
+            Subscribe to get notified of our latest events and stories.
           </p>
           <form
             action="/api/newsletter"
             method="post"
-            className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-end"
+            className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row"
           >
-            <label className="flex-1">
-              <span className="small-caps block text-neutral-600 mb-2">Email Address</span>
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="you@parish.org"
-                className="w-full border-0 border-b border-rule bg-transparent px-0 py-3 text-lg font-editorial italic text-ink placeholder:text-neutral-400 focus:border-brand-500 focus:outline-none focus:ring-0"
-              />
-            </label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email address"
+              className="flex-1 rounded-full border border-neutral-300 bg-cream-50 px-5 py-3 text-sm text-ink placeholder:text-neutral-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-700/20"
+            />
             <button
               type="submit"
-              className="bg-ink px-7 py-4 small-caps text-paper hover:bg-brand-500 transition-colors"
+              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
             >
               Subscribe
             </button>
