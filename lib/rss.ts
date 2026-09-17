@@ -69,18 +69,6 @@ export async function fetchUSCCBDailyReadings(limit = 14) {
   return fetchFeed("https://bible.usccb.org/readings.rss", limit, 3600);
 }
 
-export async function fetchUSCCBNews(limit = 10) {
-  return fetchFeed("https://www.usccb.org/news/all/feed", limit, 1800);
-}
-
-export async function fetchNCRegister(limit = 15) {
-  return fetchFeed("https://www.ncregister.com/rss/news.xml", limit, 1800);
-}
-
-export async function fetchEWTNNews(limit = 15) {
-  return fetchFeed("https://www.ewtn.com/api/v1/news/rss", limit, 1800);
-}
-
 export async function fetchVaticanNews(limit = 10) {
   return fetchFeed(
     "https://www.vaticannews.va/en.rss.xml",
@@ -89,6 +77,20 @@ export async function fetchVaticanNews(limit = 10) {
   );
 }
 
-export async function fetchSaintOfTheDay(limit = 1) {
-  return fetchFeed("https://feeds.feedburner.com/AmericanCatholic_org-saint-of-the-day", limit, 3600);
+/**
+ * Sources checked 2026-09-17. USCCB news (403), National Catholic Register
+ * (404), EWTN (404) and the Feedburner AmericanCatholic saint feed (404) are
+ * all dead; the three below answer with items. Franciscan Media is the same
+ * publisher AmericanCatholic.org became, so the saint page keeps its source.
+ */
+export async function fetchSaintOfTheDay(limit = 7) {
+  return fetchFeed("https://www.franciscanmedia.org/saint-of-the-day/feed/", limit, 3600);
+}
+
+export async function fetchCNANews(limit = 15) {
+  return fetchFeed("https://www.catholicnewsagency.com/rss/news.xml", limit, 1800);
+}
+
+export async function fetchAleteia(limit = 15) {
+  return fetchFeed("https://aleteia.org/feed/", limit, 1800);
 }

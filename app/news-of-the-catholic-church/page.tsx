@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Link from "next/link";
-import {
-  fetchUSCCBNews,
-  fetchNCRegister,
-  fetchEWTNNews,
-  fetchVaticanNews,
-  type RssItem,
-} from "@/lib/rss";
+import { fetchVaticanNews, fetchCNANews, fetchAleteia, type RssItem } from "@/lib/rss";
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
@@ -26,28 +20,22 @@ const sources: Array<{
   description: string;
 }> = [
   {
-    name: "USCCB News",
-    fetch: () => fetchUSCCBNews(10),
-    homepage: "https://www.usccb.org/news",
-    description: "United States Conference of Catholic Bishops",
-  },
-  {
-    name: "National Catholic Register",
-    fetch: () => fetchNCRegister(15),
-    homepage: "https://www.ncregister.com",
-    description: "Catholic news, opinion, and analysis",
-  },
-  {
-    name: "EWTN News",
-    fetch: () => fetchEWTNNews(15),
-    homepage: "https://www.ewtn.com/news",
-    description: "Eternal Word Television Network",
-  },
-  {
     name: "Vatican News",
-    fetch: () => fetchVaticanNews(10),
+    fetch: () => fetchVaticanNews(12),
     homepage: "https://www.vaticannews.va/en.html",
     description: "Official news of the Holy See",
+  },
+  {
+    name: "Catholic News Agency",
+    fetch: () => fetchCNANews(12),
+    homepage: "https://www.catholicnewsagency.com",
+    description: "Catholic news from the United States and the world",
+  },
+  {
+    name: "Aleteia",
+    fetch: () => fetchAleteia(12),
+    homepage: "https://aleteia.org",
+    description: "Faith, culture and the Catholic life",
   },
 ];
 

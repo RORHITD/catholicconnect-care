@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Link from "next/link";
-import { fetchUSCCBDailyReadings } from "@/lib/rss";
+import { fetchSaintOfTheDay } from "@/lib/rss";
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonical("/daily-readings-of-the-catholic-church") },
   title: "Saint of the Day — Catholic Church",
   description:
-    "Read about the Saint of the Day along with the daily Mass readings from the United States Conference of Catholic Bishops.",
+    "Today's saint, with a short life and why the Church remembers them — from Franciscan Media, with a link to today's Mass readings.",
 };
 
 export const revalidate = 3600;
 
 export default async function DailyReadingsPage() {
-  const items = await fetchUSCCBDailyReadings(14);
+  const items = await fetchSaintOfTheDay(7);
   const today = items[0];
   const rest = items.slice(1);
 
@@ -26,7 +26,7 @@ export default async function DailyReadingsPage() {
             Saint of the Day
           </p>
           <h1 className="mt-4 text-3xl text-cream-50 md:text-4xl lg:text-6xl">
-            Daily Readings of the Catholic Church
+            Saint of the Day
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-cream-100/85">
             Click on the daily reading title below to continue reading. God bless you!

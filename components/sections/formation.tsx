@@ -34,7 +34,7 @@ export default function Formation() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
-            Forming the Faithful
+            Evangelizing Through Software
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-neutral-900 md:text-4xl">
             Relief for the body. Formation for the soul.

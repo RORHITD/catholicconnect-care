@@ -12,8 +12,6 @@ const faithResources = [
   { href: "/daily-readings", label: "Daily Readings" },
   { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day" },
   { href: "/news-of-the-catholic-church", label: "Catholic News" },
-  { href: "https://www.bibletrivia.ai", label: "Bible Trivia", external: true },
-  { href: "https://masstimesnearme.org", label: "Mass Times Near Me", external: true },
 ];
 
 const waysToDonate = [
@@ -84,16 +82,21 @@ export default function SiteFooter() {
           <div>
             <h3 className="text-base font-semibold text-cream-50">Our Work</h3>
             <ul className="mt-4 space-y-2.5">
-              {ourWork.map((it) => (
-                <li key={it.label}>
-                  <Link
-                    href={it.href}
-                    className="text-sm text-cream-100/80 hover:text-brand-400 transition"
-                  >
-                    {it.label}
-                  </Link>
-                </li>
-              ))}
+              {ourWork.map((it) =>
+                "external" in it && it.external ? (
+                  <li key={it.label}>
+                    <a href={it.href} target="_blank" rel="noopener noreferrer" className="text-sm text-cream-100/80 hover:text-brand-400 transition">
+                      {it.label} ↗
+                    </a>
+                  </li>
+                ) : (
+                  <li key={it.label}>
+                    <Link href={it.href} className="text-sm text-cream-100/80 hover:text-brand-400 transition">
+                      {it.label}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 

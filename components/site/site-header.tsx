@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type NavLink = { href: string; label: string; hint?: string; external?: boolean };
-type NavGroup = { label: string; items: NavLink[] };
+type NavSection = { heading?: string; items: NavLink[] };
+type NavGroup = { label: string; sections: NavSection[] };
 
 /**
  * Grouped by what a visitor came to do, not by how the site is built.
@@ -15,30 +16,49 @@ type NavGroup = { label: string; items: NavLink[] };
 const groups: NavGroup[] = [
   {
     label: "Our Work",
-    items: [
-      { href: "/feeding-the-poor-fund", label: "Feeding the Poor Fund", hint: "Meals, farms and food security" },
-      { href: "/emergency-relief-fund", label: "Emergency Relief Fund", hint: "Disasters, attacks and medical crises" },
-      { href: "/educational-content-fund", label: "Educational Content Fund", hint: "Catholic teaching and resources" },
-      { href: "/faith-in-action", label: "Stories from the Field", hint: "News from the people you support" },
+    sections: [
+      {
+        heading: "Charitable funds",
+        items: [
+          { href: "/feeding-the-poor-fund", label: "Feeding the Poor Fund", hint: "Meals, farms and food security" },
+          { href: "/emergency-relief-fund", label: "Emergency Relief Fund", hint: "Disasters, attacks and medical crises" },
+          { href: "/educational-content-fund", label: "Educational Content Fund", hint: "Catholic teaching and resources" },
+          { href: "/faith-in-action", label: "Stories from the Field", hint: "News from the people you support" },
+        ],
+      },
+      {
+        // The Foundation's other half: software built to reach the masses.
+        heading: "Evangelizing through software",
+        items: [
+          { href: "https://www.bibletrivia.ai", label: "Bible Trivia", hint: "Read, study and quiz the Catholic Bible", external: true },
+          { href: "https://masstimesnearme.org", label: "Mass Times Near Me", hint: "Mass, confession and Adoration, anywhere", external: true },
+        ],
+      },
     ],
   },
   {
     label: "Ways to Give",
-    items: [
-      { href: "/donate", label: "Donate Online", hint: "One-time or monthly, by card or PayPal" },
-      { href: "/double-your-donation", label: "Double Your Donation", hint: "Employer matching" },
-      { href: "/donor-advised-funds", label: "Donor Advised Funds", hint: "Give through your DAF" },
-      { href: "/donate-with-crypto", label: "Donate with Crypto", hint: "Bitcoin, Ethereum and more" },
+    sections: [
+      {
+        items: [
+          { href: "/donate", label: "Donate Online", hint: "One-time or monthly, by card or PayPal" },
+          { href: "/double-your-donation", label: "Double Your Donation", hint: "Employer matching" },
+          { href: "/donor-advised-funds", label: "Donor Advised Funds", hint: "Give through your DAF" },
+          { href: "/donate-with-crypto", label: "Donate with Crypto", hint: "Bitcoin, Ethereum and more" },
+        ],
+      },
     ],
   },
   {
     label: "Faith Resources",
-    items: [
-      { href: "/daily-readings", label: "Daily Readings", hint: "Today's Mass readings" },
-      { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day" },
-      { href: "/news-of-the-catholic-church", label: "Catholic News" },
-      { href: "https://www.bibletrivia.ai", label: "Bible Trivia", hint: "Read, study and quiz the Bible", external: true },
-      { href: "https://masstimesnearme.org", label: "Mass Times Near Me", hint: "Find Mass anywhere, free", external: true },
+    sections: [
+      {
+        items: [
+          { href: "/daily-readings", label: "Daily Readings", hint: "Today's Mass readings" },
+          { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day", hint: "A saint for every day" },
+          { href: "/news-of-the-catholic-church", label: "Catholic News", hint: "Vatican News, CNA and Aleteia" },
+        ],
+      },
     ],
   },
 ];
@@ -133,14 +153,23 @@ export default function SiteHeader() {
               </button>
               {openGroup === gi && (
                 <div className="absolute left-0 top-full pt-2">
-                  <div className="w-80 rounded-xl border border-neutral-200 bg-cream-50 p-2 shadow-xl">
-                    {g.items.map((it) => (
-                      <ItemLink
-                        key={it.href}
-                        it={it}
-                        onClick={() => setOpenGroup(null)}
-                        className="block rounded-lg px-4 py-2.5 text-sm text-neutral-900 hover:bg-brand-50 transition"
-                      />
+                  <div className={`rounded-xl border border-neutral-200 bg-cream-50 p-2 shadow-xl ${g.sections.length > 1 ? "grid w-[40rem] grid-cols-2 gap-1" : "w-80"}`}>
+                    {g.sections.map((sec, si) => (
+                      <div key={si} className={si > 0 ? "border-l border-neutral-200 pl-1" : ""}>
+                        {sec.heading && (
+                          <p className="px-4 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-neutral-500">
+                            {sec.heading}
+                          </p>
+                        )}
+                        {sec.items.map((it) => (
+                          <ItemLink
+                            key={it.href}
+                            it={it}
+                            onClick={() => setOpenGroup(null)}
+                            className="block rounded-lg px-4 py-2.5 text-sm text-neutral-900 hover:bg-brand-50 transition"
+                          />
+                        ))}
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -193,13 +222,22 @@ export default function SiteHeader() {
                   </svg>
                 </summary>
                 <div className="ml-3 mt-1 border-l border-neutral-200 pl-3">
-                  {g.items.map((it) => (
-                    <ItemLink
-                      key={it.href}
-                      it={it}
-                      onClick={() => setMobileOpen(false)}
-                      className="block rounded-lg px-3 py-2 text-sm text-neutral-800 hover:bg-neutral-100"
-                    />
+                  {g.sections.map((sec, si) => (
+                    <div key={si} className={si > 0 ? "mt-2" : ""}>
+                      {sec.heading && (
+                        <p className="px-3 pb-1 pt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-neutral-500">
+                          {sec.heading}
+                        </p>
+                      )}
+                      {sec.items.map((it) => (
+                        <ItemLink
+                          key={it.href}
+                          it={it}
+                          onClick={() => setMobileOpen(false)}
+                          className="block rounded-lg px-3 py-2 text-sm text-neutral-800 hover:bg-neutral-100"
+                        />
+                      ))}
+                    </div>
                   ))}
                 </div>
               </details>
