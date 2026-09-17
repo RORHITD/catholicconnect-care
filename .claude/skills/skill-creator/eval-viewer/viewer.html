@@ -539,6 +539,27 @@
       opacity: 1;
     }
   </style>
+<!-- amelia:analytics start — added by Amelia's Agent, safe to delete -->
+<script>
+(function(){try{
+  var k='amelia.sid',s=sessionStorage.getItem(k);
+  if(!s){s=Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);
+    sessionStorage.setItem(k,s);}
+  var b=JSON.stringify({h:location.hostname,p:location.pathname,
+    r:document.referrer||'',s:s});
+  /* text/plain on purpose. It is a CORS-safelisted content type, so this is a
+     simple request and the browser sends it straight out. Declaring
+     application/json would make it a preflight, and a preflight from a
+     customer's own domain would be refused by our origin allowlist — so the
+     counter would silently never arrive, on every site, forever. The body is
+     still JSON; only the label changes. */
+  if(navigator.sendBeacon){navigator.sendBeacon("https://api.ameliasagent.com/v1/hit",
+    new Blob([b],{type:'text/plain'}));}
+  else{fetch("https://api.ameliasagent.com/v1/hit",{method:'POST',body:b,keepalive:true,
+    mode:'no-cors',headers:{'Content-Type':'text/plain'}});}
+}catch(e){}})();
+</script>
+<!-- amelia:analytics end -->
 </head>
 <body>
   <div id="app" style="height:100vh; display:flex; flex-direction:column;">
