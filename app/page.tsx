@@ -194,7 +194,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-neutral-900 text-cream-50">
         <video
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
+          className="absolute inset-0 h-full w-full object-cover opacity-60"
           autoPlay
           muted
           loop
@@ -203,8 +203,8 @@ export default function HomePage() {
         >
           <source src="/wp/wp-content/uploads/2022/08/pexels-tima-miroshnichenko-5988655.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/70 to-neutral-900/80" aria-hidden />
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-16 pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,600px)] lg:items-center lg:gap-16 lg:px-8 lg:pt-24 lg:pb-24">
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/85 via-neutral-900/60 to-neutral-900/45" aria-hidden />
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-16 pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,532px)] lg:items-center lg:gap-16 lg:px-8 lg:pt-24 lg:pb-24">
           <div className="flex flex-col justify-center">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-brand-400">
               The Catholic Connect Foundation
@@ -236,14 +236,14 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end" id="donate">
-            <div className="w-full max-w-[600px] rounded-2xl bg-cream-50 p-3 shadow-2xl ring-1 ring-black/10 sm:p-4">
+            <div className="w-full max-w-[532px] rounded-2xl bg-cream-50 p-4 shadow-2xl ring-1 ring-black/10">
               <div className="px-2 pt-2 pb-3 sm:px-3">
                 <p className="text-sm font-semibold text-neutral-900">Give securely</p>
                 <p className="mt-0.5 text-xs text-neutral-600">
                   501(c)(3) charity · gifts are tax-deductible · one-time or monthly
                 </p>
               </div>
-              <DonorboxEmbed placement="home-hero" width={600} height={960} />
+              <DonorboxEmbed placement="home-hero" width={500} height={940} />
             </div>
           </div>
         </div>

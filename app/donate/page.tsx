@@ -101,7 +101,7 @@ export default function DonatePage() {
             <rect width="100%" height="100%" fill="url(#donate-cross)" />
           </svg>
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,640px)] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,532px)] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div className="flex flex-col justify-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Support Us &amp; Donate Now
@@ -121,14 +121,14 @@ export default function DonatePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-[640px] rounded-2xl bg-cream-50 p-3 shadow-2xl ring-1 ring-black/10 sm:p-4">
+            <div className="w-full max-w-[532px] rounded-2xl bg-cream-50 p-4 shadow-2xl ring-1 ring-black/10">
               <div className="px-2 pt-2 pb-3 sm:px-3">
                 <p className="text-sm font-semibold text-neutral-900">Give securely</p>
                 <p className="mt-0.5 text-xs text-neutral-600">
                   501(c)(3) charity · gifts are tax-deductible · one-time or monthly
                 </p>
               </div>
-              <DonorboxEmbed placement="donate-page" width={640} height={960} />
+              <DonorboxEmbed placement="donate-page" width={500} height={940} />
             </div>
           </div>
         </div>

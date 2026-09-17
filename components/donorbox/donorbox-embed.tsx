@@ -9,8 +9,10 @@ type Props = {
   amount?: number;
   height?: number;
   /**
-   * Rendered width of the form, in px. Donorbox's embed lays out fine up to
-   * ~640. The wrapper owns the width: an iframe's intrinsic width is 300px,
+   * Rendered width of the form, in px. Donorbox renders its form at a fixed
+   * ~490px and left-aligns it, so a wider iframe only adds blank space beside
+   * it — 500 is the width their own embed snippet uses. The wrapper owns the
+   * width: an iframe's intrinsic width is 300px,
    * and inside a shrink-to-fit flex child `width: 100%` collapses to exactly
    * that — which is how every form on the site ended up a 302px strip.
    */
@@ -42,7 +44,7 @@ export default function DonorboxEmbed({
   defaultInterval = "m",
   amount = 20,
   height = 1100,
-  width = 560,
+  width = 500,
   title = "Donate to The Catholic Connect Foundation",
   placement,
 }: Props) {

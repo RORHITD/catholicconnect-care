@@ -15,7 +15,7 @@ export default function CommitToGiving({
   return (
     <section className="bg-neutral-50 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,560px)]">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,500px)]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Make An Impact

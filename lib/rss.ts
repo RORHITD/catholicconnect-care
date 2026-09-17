@@ -5,11 +5,31 @@ export type RssItem = {
   pubDate?: string;
 };
 
+/**
+ * XML text content is entity-encoded by spec. USCCB's readings feed puts HTML
+ * in <description> as &lt;h4&gt;… rather than inside CDATA, so without this
+ * decode the excerpt helper sees no tags to strip and the page prints
+ * "<h4>Reading 1 <a href=…" as literal text.
+ */
+function decodeXml(s: string): string {
+  return s
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, "&");
+}
+
 function pluck(xml: string, tag: string): string | undefined {
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i");
   const m = xml.match(re);
   if (!m) return undefined;
-  return m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
+  const raw = m[1].trim();
+  // CDATA holds literal markup; everything else is entity-encoded text.
+  const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/);
+  return (cdata ? cdata[1] : decodeXml(raw)).trim();
 }
 
 export function parseRss(xml: string): RssItem[] {
