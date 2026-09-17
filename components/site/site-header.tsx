@@ -151,8 +151,10 @@ export default function SiteHeader() {
                   <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </button>
-              {openGroup === gi && (
-                <div className="absolute left-0 top-full pt-2">
+              {/* Always in the DOM, toggled with `hidden`: the dropdown links are
+                  part of the page for crawlers and assistants, not just for a
+                  pointer that hovers. */}
+              <div className="absolute left-0 top-full pt-2" hidden={openGroup !== gi}>
                   <div className={`rounded-xl border border-neutral-200 bg-cream-50 p-2 shadow-xl ${g.sections.length > 1 ? "grid w-[40rem] grid-cols-2 gap-1" : "w-80"}`}>
                     {g.sections.map((sec, si) => (
                       <div key={si} className={si > 0 ? "border-l border-neutral-200 pl-1" : ""}>
@@ -173,7 +175,6 @@ export default function SiteHeader() {
                     ))}
                   </div>
                 </div>
-              )}
             </div>
           ))}
           {topLinks.map((it) => (
@@ -210,8 +211,7 @@ export default function SiteHeader() {
         </div>
       </div>
 
-      {mobileOpen && (
-        <div className="lg:hidden border-t border-neutral-200 bg-cream-50">
+      <div className="lg:hidden border-t border-neutral-200 bg-cream-50" hidden={!mobileOpen}>
           <div className="space-y-1 px-6 py-4">
             {groups.map((g) => (
               <details key={g.label} className="group">
@@ -261,7 +261,6 @@ export default function SiteHeader() {
             </Link>
           </div>
         </div>
-      )}
     </header>
   );
 }
