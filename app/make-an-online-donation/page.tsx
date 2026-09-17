@@ -68,7 +68,7 @@ export default function MakeAnOnlineDonationPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
                 Recurring Giving
               </p>
-              <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
                 Consider becoming a monthly donor
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-neutral-700">
@@ -93,7 +93,7 @@ export default function MakeAnOnlineDonationPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               How People Can Donate
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Multiple ways to give back
             </h2>
           </div>

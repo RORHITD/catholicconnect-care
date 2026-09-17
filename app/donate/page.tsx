@@ -5,7 +5,6 @@ import Image from "next/image";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import FeatureGrid from "@/components/sections/feature-grid";
 import Testimonials from "@/components/sections/testimonials";
-import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonical("/donate") },
@@ -102,12 +101,12 @@ export default function DonatePage() {
             <rect width="100%" height="100%" fill="url(#donate-cross)" />
           </svg>
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8 lg:py-28">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,640px)] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div className="flex flex-col justify-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Support Us &amp; Donate Now
             </p>
-            <h1 className="text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl leading-[1.08] md:text-5xl">
               Donate To Support The Catholic Connect Foundation
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-100/90">
@@ -122,11 +121,18 @@ export default function DonatePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed placement="donate-page" />
+            <div className="w-full max-w-[640px] rounded-2xl bg-cream-50 p-3 shadow-2xl ring-1 ring-black/10 sm:p-4">
+              <div className="px-2 pt-2 pb-3 sm:px-3">
+                <p className="text-sm font-semibold text-neutral-900">Give securely</p>
+                <p className="mt-0.5 text-xs text-neutral-600">
+                  501(c)(3) charity · gifts are tax-deductible · one-time or monthly
+                </p>
+              </div>
+              <DonorboxEmbed placement="donate-page" width={640} height={960} />
+            </div>
           </div>
         </div>
       </section>
-      <CommitToGiving placement="donate-page-footer" />
       <FeatureGrid
         eyebrow="Feeding Projects"
         heading="Learn More About Feeding The Poor Fund"
@@ -144,7 +150,7 @@ export default function DonatePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Other Ways To Give
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               More Paths To Make An Impact
             </h2>
           </div>

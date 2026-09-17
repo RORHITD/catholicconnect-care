@@ -56,7 +56,7 @@ export default function FeedingThePoorFundPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               About Us
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Sustaining feeding projects, supporting children
             </h2>
           </div>

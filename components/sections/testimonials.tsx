@@ -39,7 +39,7 @@ export default function Testimonials() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">Testimonials</p>
-          <h2 className="mt-4 text-4xl text-cream-50 md:text-5xl">
+          <h2 className="mt-4 text-3xl text-cream-50 md:text-4xl">
             About The Catholic Connect Foundation
           </h2>
         </div>

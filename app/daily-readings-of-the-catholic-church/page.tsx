@@ -25,7 +25,7 @@ export default async function DailyReadingsPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
             Saint of the Day
           </p>
-          <h1 className="mt-4 text-4xl text-cream-50 md:text-5xl lg:text-6xl">
+          <h1 className="mt-4 text-3xl text-cream-50 md:text-4xl lg:text-6xl">
             Daily Readings of the Catholic Church
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-cream-100/85">

@@ -51,7 +51,7 @@ export default function EmergencyRelief2Page() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Three ways we help
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Responding to emergencies, fast
             </h2>
           </div>

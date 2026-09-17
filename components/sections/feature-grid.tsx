@@ -33,7 +33,7 @@ export default function FeatureGrid({ eyebrow, heading, subheading, features, ba
               </p>
             )}
             {heading && (
-              <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
                 {heading}
               </h2>
             )}

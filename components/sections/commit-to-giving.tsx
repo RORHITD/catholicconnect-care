@@ -15,12 +15,12 @@ export default function CommitToGiving({
   return (
     <section className="bg-neutral-50 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_auto]">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,560px)]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Make An Impact
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               {heading}
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-700">

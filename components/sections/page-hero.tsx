@@ -46,7 +46,7 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt }: 
             {eyebrow}
           </p>
         )}
-        <h1 className="text-4xl leading-[1.1] md:text-6xl lg:text-7xl text-cream-50">
+        <h1 className="text-4xl leading-[1.08] md:text-5xl lg:text-6xl text-cream-50">
           {title}
         </h1>
         {subtitle && (

@@ -1,16 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const getInvolved = [
-  { href: "/feeding-the-poor-fund", label: "Feed the Hungry" },
-  { href: "/emergency-relief-fund", label: "Emergency Relief" },
-  { href: "/contact-us", label: "Become an Ambassador" },
-  { href: "/contact-us", label: "Become a Corporate Sponsor" },
-  { href: "/contact-us", label: "Become a Parish Partner" },
+const ourWork = [
+  { href: "/feeding-the-poor-fund", label: "Feeding the Poor Fund" },
+  { href: "/emergency-relief-fund", label: "Emergency Relief Fund" },
+  { href: "/educational-content-fund", label: "Educational Content Fund" },
+  { href: "/faith-in-action", label: "Stories from the Field" },
+];
+
+const faithResources = [
+  { href: "/daily-readings", label: "Daily Readings" },
+  { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day" },
+  { href: "/news-of-the-catholic-church", label: "Catholic News" },
+  { href: "https://www.bibletrivia.ai", label: "Bible Trivia", external: true },
+  { href: "https://masstimesnearme.org", label: "Mass Times Near Me", external: true },
 ];
 
 const waysToDonate = [
-  { href: "/make-an-online-donation", label: "Make An Online Donation" },
+  { href: "/donate", label: "Donate Online" },
   { href: "/double-your-donation", label: "Double Your Donation" },
   { href: "/donate-with-crypto", label: "Donate with Crypto" },
   { href: "/donor-advised-funds", label: "Donor Advised Funds" },
@@ -20,7 +27,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-neutral-900 text-cream-100">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
@@ -75,9 +82,9 @@ export default function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-base font-semibold text-cream-50">Get Involved</h3>
+            <h3 className="text-base font-semibold text-cream-50">Our Work</h3>
             <ul className="mt-4 space-y-2.5">
-              {getInvolved.map((it) => (
+              {ourWork.map((it) => (
                 <li key={it.label}>
                   <Link
                     href={it.href}
@@ -91,7 +98,7 @@ export default function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-base font-semibold text-cream-50">Ways to Donate</h3>
+            <h3 className="text-base font-semibold text-cream-50">Ways to Give</h3>
             <ul className="mt-4 space-y-2.5">
               {waysToDonate.map((it) => (
                 <li key={it.label}>
@@ -103,6 +110,32 @@ export default function SiteFooter() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream-50">Faith Resources</h3>
+            <ul className="mt-4 space-y-2.5">
+              {faithResources.map((it) =>
+                it.external ? (
+                  <li key={it.label}>
+                    <a
+                      href={it.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-cream-100/80 hover:text-brand-400 transition"
+                    >
+                      {it.label} ↗
+                    </a>
+                  </li>
+                ) : (
+                  <li key={it.label}>
+                    <Link href={it.href} className="text-sm text-cream-100/80 hover:text-brand-400 transition">
+                      {it.label}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -137,7 +170,15 @@ export default function SiteFooter() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-neutral-800 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-cream-100/60">
-            Copyright © {new Date().getFullYear()} The Catholic Connect Foundation — Designed &amp; Developed by Houston IT Developers LLC.
+            Copyright © {new Date().getFullYear()} The Catholic Connect Foundation ·{" "}
+            <a
+              href="https://ameliasagent.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-400 transition"
+            >
+              Built with Amelia&apos;s Agent
+            </a>
           </p>
           <Link href="/privacy-policy" className="text-xs text-cream-100/60 hover:text-brand-400 transition">
             Privacy Policy

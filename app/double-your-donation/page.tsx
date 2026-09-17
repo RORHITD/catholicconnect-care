@@ -54,7 +54,7 @@ export default function DoubleYourDonationPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               How It Works
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Check to see if your company will double your donation!
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">

@@ -40,6 +40,14 @@ export function GET() {
     lines.push(`- [${title}](${canonical(p.slug)}): ${desc}`);
   }
 
+  lines.push(
+    "",
+    "## Also from the Foundation",
+    "",
+    "- [Bible Trivia](https://www.bibletrivia.ai/): free Douay-Rheims Catholic Bible with quizzes, verse saving and study tools",
+    "- [Mass Times Near Me](https://masstimesnearme.org/): Mass, confession and Adoration times at 39,000+ parishes in 47 countries, free",
+  );
+
   lines.push("", "## About", "", `- [Contact](${canonical("/contact-us")})`, `- [Privacy Policy](${canonical("/privacy-policy")})`, "");
 
   return new Response(lines.join("\n"), {

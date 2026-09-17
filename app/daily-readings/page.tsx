@@ -21,7 +21,7 @@ export default async function DailyReadingsAlternatePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
             Daily Readings
           </p>
-          <h1 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+          <h1 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
             Daily Readings of the Catholic Church
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-neutral-700">

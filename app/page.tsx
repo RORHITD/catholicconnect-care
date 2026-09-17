@@ -3,6 +3,7 @@ import { canonical } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
+import Formation from "@/components/sections/formation";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml } from "@/lib/wp-utils";
 
@@ -191,7 +192,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-neutral-900 text-cream-50">
+      <section className="relative overflow-hidden bg-neutral-900 text-cream-50">
         <video
           className="absolute inset-0 h-full w-full object-cover opacity-35"
           autoPlay
@@ -203,12 +204,12 @@ export default function HomePage() {
           <source src="/wp/wp-content/uploads/2022/08/pexels-tima-miroshnichenko-5988655.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/70 to-neutral-900/80" aria-hidden />
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-20 pb-24 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8 lg:pt-32 lg:pb-32">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-16 pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,600px)] lg:items-center lg:gap-16 lg:px-8 lg:pt-24 lg:pb-24">
           <div className="flex flex-col justify-center">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-brand-400">
               The Catholic Connect Foundation
             </p>
-            <h1 className="text-5xl leading-[1.05] md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl leading-[1.08] md:text-5xl lg:text-6xl">
               Donate Today
               <br />
               <span className="text-brand-400">&</span> Support Our Mission
@@ -235,7 +236,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end" id="donate">
-            <DonorboxEmbed placement="home-hero" />
+            <div className="w-full max-w-[600px] rounded-2xl bg-cream-50 p-3 shadow-2xl ring-1 ring-black/10 sm:p-4">
+              <div className="px-2 pt-2 pb-3 sm:px-3">
+                <p className="text-sm font-semibold text-neutral-900">Give securely</p>
+                <p className="mt-0.5 text-xs text-neutral-600">
+                  501(c)(3) charity · gifts are tax-deductible · one-time or monthly
+                </p>
+              </div>
+              <DonorboxEmbed placement="home-hero" width={600} height={960} />
+            </div>
           </div>
         </div>
       </section>
@@ -247,11 +256,11 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Our Initiatives
             </p>
-            <h2 className="mt-4 text-4xl leading-tight text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl leading-tight text-neutral-900 md:text-4xl">
               Donate to The Catholic Connect Foundation
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-neutral-700">
-              Choose what initiatives you would like to support. Our charitable and humanitarian projects support priests, nuns, and organizations that help further our mission. Join us and make an impact today.
+              Choose the initiative you would like to support. Our charitable and humanitarian projects fund priests, nuns and organizations serving the poor — and alongside them, the Foundation forms the faithful through free resources like Bible Trivia and Mass Times Near Me.
             </p>
           </div>
 
@@ -300,7 +309,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Feeding Projects
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Learn More About Feeding The Poor Fund
             </h2>
           </div>
@@ -341,7 +350,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Emergency Relief Fund
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Learn More About Who The Emergency Relief Fund Supports
             </h2>
           </div>
@@ -376,6 +385,9 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
+      {/* FORMATION — Bible Trivia + Mass Times Near Me */}
+      <Formation />
+
       <section className="relative overflow-hidden bg-neutral-900 py-20 text-cream-50 lg:py-28">
         <div className="absolute inset-0 opacity-[0.05]" aria-hidden>
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +404,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-400">
               Testimonials
             </p>
-            <h2 className="mt-4 text-4xl text-cream-50 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-cream-50 md:text-4xl">
               About The Catholic Connect Foundation
             </h2>
           </div>
@@ -430,7 +442,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
               Our Values
             </p>
-            <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+            <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
               Why Choose Our Charity
             </h2>
           </div>
@@ -483,7 +495,7 @@ export default function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
                 Stories &amp; News
               </p>
-              <h2 className="mt-4 text-4xl text-neutral-900 md:text-5xl">
+              <h2 className="mt-4 text-3xl text-neutral-900 md:text-4xl">
                 Be Inspired By The Catholic Connect Foundation
               </h2>
             </div>

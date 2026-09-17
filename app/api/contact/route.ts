@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
 
 const CONTACT_RECIPIENT = process.env.CONTACT_RECIPIENT_EMAIL ?? "contact@catholicconnect.care";
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const RESEND_FROM = process.env.RESEND_FROM_EMAIL ?? "noreply@catholicconnect.care";
+// Amelia's Agent reserves RESEND_API_KEY for its Connect flow and refuses it as a
+// project secret, while deployed containers only receive project secrets. Read a
+// plain name first; the original stays as a fallback for other hosts.
+const RESEND_API_KEY = process.env.CONTACT_EMAIL_API_KEY ?? process.env.RESEND_API_KEY;
+const RESEND_FROM = process.env.CONTACT_EMAIL_FROM ?? process.env.RESEND_FROM_EMAIL ?? "noreply@catholicconnect.care";
 
 type Body = {
   firstName?: string;

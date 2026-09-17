@@ -2,6 +2,7 @@
   "name": "catholicconnect-care",
   "version": "0.1.0",
   "private": true,
+  "author": "Houston IT Developers LLC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
