@@ -479,7 +479,7 @@ export default function HomePage() {
             <div className="mt-7">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow transition hover:bg-brand-700"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-8 py-3.5 text-sm font-semibold text-white shadow transition hover:bg-brand-700"
               >
                 Donate &amp; Support
               </Link>
