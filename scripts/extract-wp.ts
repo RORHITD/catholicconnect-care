@@ -80,7 +80,11 @@ function extractImageUrls(html: string): string[] {
 
 function localPathFor(url: string): string {
   const u = new URL(url);
-  const path = u.pathname.replace(/^\/+/, "");
+  // decodeURIComponent is required: URL.pathname returns the PERCENT-ENCODED
+  // path, so a filename containing "×" lands on disk literally named
+  // "...%C3%97..." while the browser asks for the decoded "×" and gets a 404.
+  // This silently broke the hero image on the 213k-impression Padre Pio page.
+  const path = decodeURIComponent(u.pathname).replace(/^\/+/, "");
   return `${IMG_DIR}/${path}`;
 }
 
@@ -88,7 +92,9 @@ function localUrlFor(url: string): string {
   try {
     const u = new URL(url);
     if (!u.pathname.includes("/wp-content/")) return url;
-    return `/wp${u.pathname}`;
+    // Match localPathFor: emit the decoded path so the request resolves to the
+    // file that was actually written.
+    return `/wp${decodeURIComponent(u.pathname)}`;
   } catch {
     return url;
   }
