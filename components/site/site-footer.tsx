@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ourWork = [
+const ourWork: { href: string; label: string; external?: boolean }[] = [
   { href: "/feeding-the-poor-fund", label: "Feeding the Poor Fund" },
   { href: "/emergency-relief-fund", label: "Emergency Relief Fund" },
   { href: "/educational-content-fund", label: "Educational Content Fund" },
   { href: "/faith-in-action", label: "Stories from the Field" },
 ];
 
-const faithResources = [
+const faithResources: { href: string; label: string; external?: boolean }[] = [
   { href: "/daily-readings", label: "Daily Readings" },
   { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day" },
   { href: "/news-of-the-catholic-church", label: "Catholic News" },
@@ -83,7 +83,7 @@ export default function SiteFooter() {
             <h3 className="text-base font-semibold text-cream-50">Our Work</h3>
             <ul className="mt-4 space-y-2.5">
               {ourWork.map((it) =>
-                "external" in it && it.external ? (
+                it.external ? (
                   <li key={it.label}>
                     <a href={it.href} target="_blank" rel="noopener noreferrer" className="text-sm text-cream-100/80 hover:text-brand-400 transition">
                       {it.label} ↗
