@@ -193,16 +193,25 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden bg-neutral-900 text-cream-50">
+        {/* 720p, ~2MB, desktop only. The original was 3840×2160 at 16 Mbps —
+            22 MB downloaded by every visitor, phones included, for a
+            background. Phones get the poster. */}
         <video
-          className="absolute inset-0 h-full w-full object-cover opacity-60"
+          className="absolute inset-0 hidden h-full w-full object-cover opacity-60 md:block"
           autoPlay
           muted
           loop
           playsInline
+          preload="metadata"
           poster="/wp/wp-content/uploads/2022/07/Rectangle-5209.png"
         >
-          <source src="/wp/wp-content/uploads/2022/08/pexels-tima-miroshnichenko-5988655.mp4" type="video/mp4" />
+          <source src="/media/hero-720p.mp4" type="video/mp4" />
         </video>
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-60 md:hidden"
+          style={{ backgroundImage: "url(/wp/wp-content/uploads/2022/07/Rectangle-5209.png)" }}
+          aria-hidden
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/85 via-neutral-900/60 to-neutral-900/45" aria-hidden />
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-16 pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,532px)] lg:items-center lg:gap-16 lg:px-8 lg:pt-24 lg:pb-24">
           <div className="flex flex-col justify-center">

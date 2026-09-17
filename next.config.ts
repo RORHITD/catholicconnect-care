@@ -18,6 +18,23 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(self), geolocation=()" },
+          // Not X-Frame-Options: Amelia's Agent previews and edits the site
+          // inside an iframe from its own origin, and Donorbox needs payment.
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self' https://ameliasagent.com https://*.ameliasagent.com" },
+        ],
+      },
+    ];
+  },
+
   async redirects() {
     // Sourced from data/redirects.ts so every rule carries a written reason.
     return ALL_REDIRECTS.map(({ source, destination, permanent }) => ({

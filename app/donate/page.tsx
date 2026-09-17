@@ -3,6 +3,8 @@ import { canonical } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
+import JsonLd from "@/components/seo/json-ld";
+import { graph, faq, breadcrumbs } from "@/lib/schema";
 import FeatureGrid from "@/components/sections/feature-grid";
 import Testimonials from "@/components/sections/testimonials";
 
@@ -12,6 +14,13 @@ export const metadata: Metadata = {
   description:
     "Donate to support charitable and humanitarian causes including feeding the poor, emergency relief, and educational content for Catholic communities worldwide.",
 };
+
+const donateFaq = [
+  { q: "Is my donation to The Catholic Connect Foundation tax-deductible?", a: "Yes. The Catholic Connect Foundation is a 501(c)(3) charity, so gifts are tax-deductible in the United States to the extent the law allows. You receive a receipt by email for every gift." },
+  { q: "Can I give monthly?", a: "Yes. Choose Monthly in the form above; you can change or cancel a recurring gift at any time from the link in your receipt." },
+  { q: "What other ways can I give?", a: "Besides card and PayPal, you can give through a donor-advised fund, in cryptocurrency, or double your gift through an employer matching program." },
+  { q: "Where does my gift go?", a: "To priests, nuns, orphanages and partner charities the Foundation has vetted — feeding programs, emergency relief and Catholic educational content. You can direct your gift to a specific fund." },
+];
 
 const beneficiaries = [
   { src: "/wp/wp-content/uploads/2022/07/Fr-Deus-Chickens.png", alt: "Fr. Deus chicken farm in Uganda" },
@@ -90,6 +99,7 @@ const otherWaysToGive = [
 export default function DonatePage() {
   return (
     <>
+      <JsonLd data={graph(faq(donateFaq), breadcrumbs([{ name: "Home", path: "/" }, { name: "Donate", path: "/donate" }]))} />
       <section className="relative overflow-hidden bg-neutral-900 text-cream-50">
         <div className="absolute inset-0 opacity-[0.08]" aria-hidden>
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

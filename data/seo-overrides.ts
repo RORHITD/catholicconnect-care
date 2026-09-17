@@ -15,6 +15,18 @@ export type SeoOverride = {
 };
 
 export const SEO_OVERRIDES: Record<string, SeoOverride> = {
+  "mexican-doctor-and-devoted-catholic-dad-of-5-in-critical-care-unit-with-covid-19-after-performing-emergency-surgery-on-a-child-with-covid-19": {
+    title: "Doctor in Critical Care After Emergency Surgery on a Child with COVID-19",
+    description:
+      "A Mexican doctor and Catholic father of five is in intensive care with COVID-19 after operating on an infected child — and how you can help his family.",
+    note: "WordPress title was 122 characters; Google shows about 60.",
+  },
+  "the-united-states-is-the-top-provider-of-health-and-development-assistance-to-uganda": {
+    title: "The US Is Uganda's Top Provider of Health and Development Aid",
+    description:
+      "What United States health and development assistance to Uganda funds, how much reaches the field, and where Catholic missions fit in.",
+    note: "WordPress title was 118 characters.",
+  },
   "catholic-university": {
     title: "Top Catholic Universities and Colleges in the USA",
     description:

@@ -4,13 +4,14 @@ import "./globals.css";
 import SiteHeader from "@/components/site/site-header";
 import SiteFooter from "@/components/site/site-footer";
 import JsonLd from "@/components/seo/json-ld";
+import Analytics, { AnalyticsNoScript } from "@/components/seo/analytics";
 import { graph, organization, website } from "@/lib/schema";
 
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -18,16 +19,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://catholicconnect.care"),
   title: {
     default: "The Catholic Connect Foundation — Supporting Charitable Initiatives",
-    template: "%s | The Catholic Connect Foundation",
+    template: "%s | Catholic Connect",
   },
   description:
     "Join us in helping Catholic priests, nuns, orphanages, and other nonprofits achieve their humanitarian and charitable missions. Donate today.",
   openGraph: {
     type: "website",
     siteName: "The Catholic Connect Foundation",
-    images: ["/wp/wp-content/uploads/2022/07/Rectangle-5209.png"],
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "The Catholic Connect Foundation" }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: ["/og-default.png"] },
   robots: {
     index: true,
     follow: true,
@@ -45,7 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-ink">
+        <AnalyticsNoScript />
         <JsonLd data={graph(organization(), website())} />
+        <Analytics />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
