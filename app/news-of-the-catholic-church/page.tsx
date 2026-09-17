@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import {
   fetchUSCCBNews,
@@ -10,6 +11,7 @@ import {
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/news-of-the-catholic-church") },
   title: "News of the Catholic Church",
   description:
     "Read the latest news from trusted Catholic sources — USCCB, the National Catholic Register, EWTN, and Vatican News.",

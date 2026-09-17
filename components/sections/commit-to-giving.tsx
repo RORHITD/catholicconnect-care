@@ -3,9 +3,12 @@ import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 type Props = {
   heading?: string;
   message?: string;
+  /** Required so each page's copy of this section reports its own funnel. */
+  placement: string;
 };
 
 export default function CommitToGiving({
+  placement,
   heading = "Commit To Giving",
   message = "Your donation helps The Catholic Connect Foundation provide support for those most in need. We thank you for helping and assure you of our prayers and the prayers of all of those you are helping.",
 }: Props) {
@@ -25,7 +28,7 @@ export default function CommitToGiving({
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed height={760} />
+            <DonorboxEmbed height={760} placement={placement} />
           </div>
         </div>
       </div>

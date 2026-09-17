@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import PageHero from "@/components/sections/page-hero";
 import WhyChoose from "@/components/sections/why-choose";
 import Testimonials from "@/components/sections/testimonials";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/educational-content-fund") },
   title: "Educational Content Fund",
   description:
     "We support educational content for parishes, ministries, and lay leaders across the globe — helping educate, empower, and inspire others to commit time and resources toward charitable causes.",
@@ -71,6 +73,7 @@ export default function EducationalContentFundPage() {
       <WhyChoose />
       <Testimonials />
       <CommitToGiving
+        placement="educational-content-fund-footer"
         message="Your donation helps The Catholic Connect Foundation provide support for educational content. We thank you for helping and assure you of our prayers and the prayers of all of those you are helping through our content."
       />
     </>

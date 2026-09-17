@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import { fetchUSCCBDailyReadings } from "@/lib/rss";
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/daily-readings-of-the-catholic-church") },
   title: "Saint of the Day — Catholic Church",
   description:
     "Read about the Saint of the Day along with the daily Mass readings from the United States Conference of Catholic Bishops.",

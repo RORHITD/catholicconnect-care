@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import PageHero from "@/components/sections/page-hero";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/donor-advised-funds") },
   title: "Donor Advised Funds",
   description:
     "Make a lasting impact by directing your donor-advised fund (DAF) toward The Catholic Connect Foundation's charitable initiatives.",

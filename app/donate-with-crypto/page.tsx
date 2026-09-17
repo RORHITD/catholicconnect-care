@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import Testimonials from "@/components/sections/testimonials";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/donate-with-crypto") },
   title: "Donate With Crypto",
   description:
     "Donate cryptocurrency to The Catholic Connect Foundation — Bitcoin, Ethereum, and dozens of other coins. A tax-efficient way to support our mission.",
@@ -46,7 +48,7 @@ export default function DonateWithCryptoPage() {
             </ul>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed />
+            <DonorboxEmbed placement="donate-with-crypto" />
           </div>
         </div>
       </section>

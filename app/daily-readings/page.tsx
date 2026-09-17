@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import { fetchUSCCBDailyReadings } from "@/lib/rss";
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/daily-readings") },
   title: "Daily Readings of the Catholic Church",
   description: "Daily Mass readings brought to you by the United States Conference of Catholic Bishops (USCCB).",
 };

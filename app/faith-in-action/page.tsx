@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/faith-in-action") },
   title: "Faith in Action — Catholic Charity Bringing Hope to The World",
   description:
     "Stories, news, and inspiration from The Catholic Connect Foundation — Catholic charity work, role models, saints, and reflections on Scripture.",

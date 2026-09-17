@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import Testimonials from "@/components/sections/testimonials";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/double-your-donation") },
   title: "Double Your Donation",
   description:
     "Your company may match your donation. Within the last 12 months, matching gift programs identified over $100,000 in donations that qualify to be doubled.",
@@ -41,7 +43,7 @@ export default function DoubleYourDonationPage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed />
+            <DonorboxEmbed placement="double-your-donation" />
           </div>
         </div>
       </section>
@@ -92,7 +94,7 @@ export default function DoubleYourDonationPage() {
         </div>
       </section>
       <Testimonials />
-      <CommitToGiving />
+      <CommitToGiving placement="double-your-donation-footer" />
     </>
   );
 }

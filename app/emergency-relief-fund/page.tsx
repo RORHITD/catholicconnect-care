@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import PageHero from "@/components/sections/page-hero";
 import FeatureGrid from "@/components/sections/feature-grid";
 import WhyChoose from "@/components/sections/why-choose";
@@ -6,6 +7,7 @@ import Testimonials from "@/components/sections/testimonials";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/emergency-relief-fund") },
   title: "Emergency Relief Fund",
   description:
     "We help support emergency relief projects: medical emergencies, victims of terror attacks, natural disasters, and family emergencies across the globe.",
@@ -55,7 +57,7 @@ export default function EmergencyReliefFundPage() {
       />
       <WhyChoose />
       <Testimonials />
-      <CommitToGiving />
+      <CommitToGiving placement="emergency-relief-fund-footer" />
     </>
   );
 }

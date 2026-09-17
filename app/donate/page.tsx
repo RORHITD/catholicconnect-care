@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
@@ -7,6 +8,7 @@ import Testimonials from "@/components/sections/testimonials";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/donate") },
   title: "Donate To Support The Catholic Connect Foundation",
   description:
     "Donate to support charitable and humanitarian causes including feeding the poor, emergency relief, and educational content for Catholic communities worldwide.",
@@ -120,11 +122,11 @@ export default function DonatePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed />
+            <DonorboxEmbed placement="donate-page" />
           </div>
         </div>
       </section>
-      <CommitToGiving />
+      <CommitToGiving placement="donate-page-footer" />
       <FeatureGrid
         eyebrow="Feeding Projects"
         heading="Learn More About Feeding The Poor Fund"

@@ -4,6 +4,27 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml, stripWp, plainExcerpt } from "@/lib/wp-utils";
+import JsonLd from "@/components/seo/json-ld";
+import { graph, article, breadcrumbs } from "@/lib/schema";
+import { canonical } from "@/lib/site";
+import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
+import { SEO_OVERRIDES } from "@/data/seo-overrides";
+import ContextualGiving from "@/components/sections/contextual-giving";
+import PreferredSourceButton from "@/components/seo/preferred-source";
+
+/**
+ * Posts whose search intent is explicitly "I want to give money".
+ *
+ * /top-15-catholic-charities-to-donate-to-in-the-usa/ alone drew 11,422
+ * pageviews in 480 days and fired ZERO checkout events, because the only route
+ * to giving was two inline text links. It is the highest-intent page on the
+ * site and the only content page that converts at all (3 key events, $45).
+ * Put the form where the intent already is.
+ */
+const DONATION_INTENT_SLUGS = new Set([
+  "top-15-catholic-charities-to-donate-to-in-the-usa",
+  "catholic-nonprofits",
+]);
 
 type Params = { slug: string };
 
@@ -21,8 +42,10 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
   const { slug } = await props.params;
   const post = getPost(slug);
   if (!post) return {};
-  const title = decodeHtml(post.title.rendered);
-  const description = plainExcerpt(post.excerpt.rendered || post.content.rendered, 160);
+  const override = SEO_OVERRIDES[slug];
+  const title = override?.title ?? decodeHtml(post.title.rendered);
+  const description =
+    override?.description ?? plainExcerpt(post.excerpt.rendered || post.content.rendered, 160);
   const image = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url?.replace(
     /^https?:\/\/(www\.)?catholicconnect\.care/,
     "/wp",
@@ -30,7 +53,9 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
   return {
     title,
     description,
+    alternates: { canonical: canonical(slug) },
     openGraph: {
+      url: canonical(slug),
       type: "article",
       title,
       description,
@@ -61,8 +86,27 @@ export default async function PostPage(props: { params: Promise<Params> }) {
     })
     .slice(0, 3);
 
+  const description = plainExcerpt(post.excerpt.rendered || post.content.rendered, 160);
+
   return (
     <>
+      <JsonLd
+        data={graph(
+          article({
+            title,
+            description,
+            path: slug,
+            published: post.date,
+            modified: post.modified,
+            image: heroImage,
+          }),
+          breadcrumbs([
+            { name: "Home", path: "/" },
+            { name: "Faith in Action", path: "/faith-in-action" },
+            { name: title, path: slug },
+          ]),
+        )}
+      />
       <article>
         <header className="bg-neutral-900 py-16 text-cream-50 lg:py-20">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
@@ -107,6 +151,25 @@ export default async function PostPage(props: { params: Promise<Params> }) {
           <div className="prose-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </article>
+      {DONATION_INTENT_SLUGS.has(slug) && (
+        <section className="bg-neutral-50 py-16">
+          <div className="mx-auto max-w-3xl px-6 lg:px-8">
+            <h2 className="text-3xl text-neutral-900">Give to a vetted Catholic charity today</h2>
+            <p className="mt-3 text-neutral-600">
+              The Catholic Connect Foundation funds priests, nuns and orphanages doing this
+              work directly. Every gift is tax-deductible.
+            </p>
+            <div className="mt-8">
+              <DonorboxEmbed height={760} placement={`post-${slug}`} />
+            </div>
+          </div>
+        </section>
+      )}
+      
+      <div className="mx-auto max-w-3xl px-6 lg:px-8">
+        <ContextualGiving slug={slug} />
+        <PreferredSourceButton />
+      </div>
 
       {related.length > 0 && (
         <section className="bg-neutral-50 py-16 lg:py-20">
@@ -138,7 +201,8 @@ export default async function PostPage(props: { params: Promise<Params> }) {
                         Read More »
                       </Link>
                     </div>
-                  </article>
+                  
+      </article>
                 );
               })}
             </div>

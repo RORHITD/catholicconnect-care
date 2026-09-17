@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,6 +19,7 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
   const cat = (categoriesData as Cat[]).find((c) => c.slug === slug);
   if (!cat) return {};
   return {
+    alternates: { canonical: canonical(`/category/${slug}`) },
     title: `${cat.name} — Faith in Action`,
     description: `Posts from The Catholic Connect Foundation in the ${cat.name} category.`,
   };

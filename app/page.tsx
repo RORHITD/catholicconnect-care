@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml } from "@/lib/wp-utils";
+
+export const metadata: Metadata = {
+  alternates: { canonical: canonical("/") },
+};
 
 const initiatives = [
   {
@@ -229,7 +235,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end" id="donate">
-            <DonorboxEmbed />
+            <DonorboxEmbed placement="home-hero" />
           </div>
         </div>
       </section>

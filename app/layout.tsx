@@ -3,6 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site/site-header";
 import SiteFooter from "@/components/site/site-footer";
+import JsonLd from "@/components/seo/json-ld";
+import { graph, organization, website } from "@/lib/schema";
+
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -25,6 +28,11 @@ export const metadata: Metadata = {
     images: ["/wp/wp-content/uploads/2022/07/Rectangle-5209.png"],
   },
   twitter: { card: "summary_large_image" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
   icons: {
     icon: "/branding/logo-icon.jpg",
     apple: "/branding/logo-icon.jpg",
@@ -37,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-ink">
+        <JsonLd data={graph(organization(), website())} />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/sections/page-hero";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/feeding-the-hungry-2") },
   title: "Feeding The Hungry",
   description:
     "Our mission to feed the hungry partners with local parishes and priests so donations go directly to those most in need — not administrative overhead.",
@@ -101,7 +103,7 @@ export default function FeedingTheHungry2Page() {
         </div>
       </section>
 
-      <CommitToGiving />
+      <CommitToGiving placement="feeding-the-hungry-2-footer" />
     </>
   );
 }

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/sections/page-hero";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/emergency-relief-2") },
   title: "Emergency Relief",
   description:
     "We respond quickly to emergencies — natural disasters, violence, and medical crises — through trusted local Catholic partners.",
@@ -76,7 +78,7 @@ export default function EmergencyRelief2Page() {
           </div>
         </div>
       </section>
-      <CommitToGiving />
+      <CommitToGiving placement="emergency-relief-2-footer" />
     </>
   );
 }

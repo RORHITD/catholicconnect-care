@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import PageHero from "@/components/sections/page-hero";
 import FeatureGrid from "@/components/sections/feature-grid";
 import WhyChoose from "@/components/sections/why-choose";
@@ -6,6 +7,7 @@ import Testimonials from "@/components/sections/testimonials";
 import CommitToGiving from "@/components/sections/commit-to-giving";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/feeding-the-poor-fund") },
   title: "Feeding The Poor Fund",
   description:
     "Donate to support sustainable feeding projects, orphanages, and chicken farms that provide adequate nutrition to families and children that are malnourished.",
@@ -76,7 +78,7 @@ export default function FeedingThePoorFundPage() {
       />
       <WhyChoose />
       <Testimonials />
-      <CommitToGiving />
+      <CommitToGiving placement="feeding-the-poor-fund-footer" />
     </>
   );
 }

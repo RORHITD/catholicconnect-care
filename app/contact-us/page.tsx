@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import ContactForm from "@/components/forms/contact-form";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/contact-us") },
   title: "Contact Us",
   description:
     "Contact The Catholic Connect Foundation. Call or text +1 (832) 241-7969, email contact@catholicconnect.care, or use the form to send a message.",

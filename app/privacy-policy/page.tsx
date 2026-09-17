@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import pages from "@/data/wp-pages.json";
 import { stripWp, decodeHtml } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/privacy-policy") },
   title: "Privacy Policy",
   description:
     "Privacy Policy for The Catholic Connect Foundation — how we collect, use, and protect information.",

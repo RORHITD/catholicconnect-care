@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { canonical } from "@/lib/site";
 import Link from "next/link";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import Testimonials from "@/components/sections/testimonials";
 
 export const metadata: Metadata = {
+  alternates: { canonical: canonical("/make-an-online-donation") },
   title: "Make An Online Donation",
   description:
     "Make a one-time or recurring online donation to The Catholic Connect Foundation. Support feeding the poor, emergency relief, and educational ministries.",
@@ -54,7 +56,7 @@ export default function MakeAnOnlineDonationPage() {
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed />
+            <DonorboxEmbed placement="make-an-online-donation" />
           </div>
         </div>
       </section>
