@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 type Props = {
   campaign?: string;
@@ -25,6 +26,13 @@ type Props = {
    * those two are indistinguishable in GA4.
    */
   placement: string;
+  /**
+   * Mount the iframe only when the wrapper scrolls near the viewport. The
+   * Donorbox embed pulls Stripe, hCaptcha, Google Pay, Maps, reCAPTCHA and
+   * PayPal — about 6 MB and ~180 ms of main-thread time — so a form below
+   * the fold should not cost that on page load.
+   */
+  lazy?: boolean;
 };
 
 declare global {
@@ -47,16 +55,39 @@ export default function DonorboxEmbed({
   width = 500,
   title = "Donate to The Catholic Connect Foundation",
   placement,
+  lazy = false,
 }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [armed, setArmed] = useState(!lazy);
+
+  // The homepage launcher hands the visitor's choice over in the URL so the
+  // form opens on the amount and cadence they already picked.
+  const search = useSearchParams();
+  const qAmount = Number(search?.get("amount"));
+  const qInterval = search?.get("interval");
+  const interval = qInterval === "o" || qInterval === "m" || qInterval === "w" ? qInterval : defaultInterval;
+  const chosen = Number.isFinite(qAmount) && qAmount > 0 ? qAmount : amount;
 
   const params = new URLSearchParams();
-  params.set("default_interval", defaultInterval);
-  if (amount) params.set("amount", String(amount));
+  params.set("default_interval", interval);
+  if (chosen) params.set("amount", String(chosen));
   const src = `https://donorbox.org/embed/${campaign}?${params.toString()}`;
+
+  // Lazy forms arm when they come within 600px of the viewport.
+  useEffect(() => {
+    if (armed) return;
+    const el = wrapRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") { setArmed(true); return; }
+    const io = new IntersectionObserver(
+      (entries) => { if (entries.some((e) => e.isIntersecting)) { setArmed(true); io.disconnect(); } },
+      { rootMargin: "600px 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [armed]);
 
   // 1. Did the widget actually come into view? A donation form below a 1100px
   //    fold that nobody scrolls to is not an abandoned donation.
@@ -84,6 +115,7 @@ export default function DonorboxEmbed({
   //    consent gate or a slow network is silent — it looks exactly like a
   //    donor who changed their mind.
   useEffect(() => {
+    if (!armed) return;
     const t = setTimeout(() => {
       if (!loaded) {
         setFailed(true);
@@ -91,7 +123,7 @@ export default function DonorboxEmbed({
       }
     }, 8000);
     return () => clearTimeout(t);
-  }, [loaded, placement, campaign]);
+  }, [armed, loaded, placement, campaign]);
 
   // 3. Donorbox posts progress messages from inside the iframe. Without this
   //    the checkout is a black box and "2,290 started, 8 finished" cannot be
@@ -109,15 +141,17 @@ export default function DonorboxEmbed({
 
   return (
     <div ref={wrapRef} className="w-full" style={{ maxWidth: `${width}px` }}>
-      <Script
-        src="https://donorbox.org/widget.js"
-        strategy="afterInteractive"
-        // @ts-expect-error — non-standard Donorbox attribute
-        paypalexpress="true"
-      />
+      {armed && (
+        <Script
+          src="https://donorbox.org/widget.js"
+          strategy="afterInteractive"
+          // @ts-expect-error — non-standard Donorbox attribute
+          paypalexpress="true"
+        />
+      )}
       <iframe
         ref={frameRef}
-        src={src}
+        src={armed ? src : undefined}
         title={title}
         name="donorbox"
         allow="payment"

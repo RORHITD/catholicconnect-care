@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Link from "next/link";
@@ -48,7 +49,7 @@ export default function DonateWithCryptoPage() {
             </ul>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed placement="donate-with-crypto" />
+            <Suspense fallback={<div style={{ minHeight: 1100 }} />}><DonorboxEmbed placement="donate-with-crypto" /></Suspense>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ import { decodeHtml, plainExcerpt } from "@/lib/wp-utils";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonical("/faith-in-action") },
-  title: "Faith in Action — Catholic Charity Bringing Hope to The World",
+  title: { absolute: "Faith in Action — Stories from the Field" },
   description:
     "Stories, news, and inspiration from The Catholic Connect Foundation — Catholic charity work, role models, saints, and reflections on Scripture.",
 };

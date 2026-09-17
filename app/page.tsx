@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
-import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
+import GivingLauncher from "@/components/donorbox/giving-launcher";
 import Formation from "@/components/sections/formation";
 import postsData from "@/data/wp-posts.json";
 import { decodeHtml } from "@/lib/wp-utils";
@@ -229,7 +229,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-neutral-900 shadow-lg transition hover:bg-brand-600"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-brand-700"
               >
                 Donate Now
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -245,15 +245,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end" id="donate">
-            <div className="w-full max-w-[532px] rounded-2xl bg-cream-50 p-4 shadow-2xl ring-1 ring-black/10">
-              <div className="px-2 pt-2 pb-3 sm:px-3">
-                <p className="text-sm font-semibold text-neutral-900">Give securely</p>
-                <p className="mt-0.5 text-xs text-neutral-600">
-                  501(c)(3) charity · gifts are tax-deductible · one-time or monthly
-                </p>
-              </div>
-              <DonorboxEmbed placement="home-hero" width={500} height={940} />
-            </div>
+            <GivingLauncher />
           </div>
         </div>
       </section>
@@ -344,7 +336,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/feeding-the-poor-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               Support Feeding the Poor
             </Link>
@@ -385,7 +377,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/emergency-relief-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               Support Emergency Relief
             </Link>
@@ -487,7 +479,7 @@ export default function HomePage() {
             <div className="mt-7">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow transition hover:bg-brand-600"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow transition hover:bg-brand-700"
               >
                 Donate &amp; Support
               </Link>
@@ -616,7 +608,7 @@ export default function HomePage() {
             />
             <button
               type="submit"
-              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               Subscribe
             </button>

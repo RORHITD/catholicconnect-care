@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -51,7 +52,10 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
     "/wp",
   );
   return {
-    title,
+    // Articles carry no brand suffix: WordPress titles are already long, and
+    // the brand lives in og:site_name and the Organization schema. Google
+    // shows roughly 60 characters.
+    title: { absolute: title },
     description,
     alternates: { canonical: canonical(slug) },
     openGraph: {
@@ -160,7 +164,9 @@ export default async function PostPage(props: { params: Promise<Params> }) {
               work directly. Every gift is tax-deductible.
             </p>
             <div className="mt-8">
-              <DonorboxEmbed height={760} placement={`post-${slug}`} />
+              <Suspense fallback={<div style={{ minHeight: 760 }} />}>
+                  <DonorboxEmbed height={760} placement={`post-${slug}`} lazy />
+                </Suspense>
             </div>
           </div>
         </section>

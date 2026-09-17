@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Link from "next/link";
@@ -56,7 +57,7 @@ export default function MakeAnOnlineDonationPage() {
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed placement="make-an-online-donation" />
+            <Suspense fallback={<div style={{ minHeight: 1100 }} />}><DonorboxEmbed placement="make-an-online-donation" /></Suspense>
           </div>
         </div>
       </section>
@@ -119,7 +120,7 @@ export default function MakeAnOnlineDonationPage() {
             </p>
             <Link
               href="/contact-us"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               Contact Us About Asset Donations
             </Link>

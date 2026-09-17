@@ -104,7 +104,7 @@ export default function SiteHeader() {
     >
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-brand-500 focus:px-4 focus:py-2 focus:text-cream-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-cream-50"
       >
         Skip to content
       </a>
@@ -187,7 +187,7 @@ export default function SiteHeader() {
         <div className="flex items-center gap-3">
           <Link
             href="/donate"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600 hover:shadow-md"
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 hover:shadow-md"
           >
             Donate
           </Link>
@@ -255,7 +255,7 @@ export default function SiteHeader() {
             <Link
               href="/donate"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 block rounded-full bg-brand-500 px-6 py-3 text-center text-sm font-semibold text-white"
+              className="mt-2 block rounded-full bg-brand-600 px-6 py-3 text-center text-sm font-semibold text-white"
             >
               Donate Now
             </Link>

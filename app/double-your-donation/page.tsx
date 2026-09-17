@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
@@ -43,7 +44,7 @@ export default function DoubleYourDonationPage() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed placement="double-your-donation" />
+            <Suspense fallback={<div style={{ minHeight: 1100 }} />}><DonorboxEmbed placement="double-your-donation" /></Suspense>
           </div>
         </div>
       </section>
@@ -81,7 +82,7 @@ export default function DoubleYourDonationPage() {
               },
             ].map((step, i) => (
               <li key={step.title} className="flex gap-5 rounded-2xl bg-cream-50 p-6 ring-1 ring-neutral-200">
-                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-brand-500 text-lg font-bold text-cream-50">
+                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-brand-600 text-lg font-bold text-cream-50">
                   {i + 1}
                 </span>
                 <div>

@@ -36,8 +36,8 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt }: 
               <rect width="100%" height="100%" fill="url(#hero-cross)" />
             </svg>
           </div>
-          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl" aria-hidden />
-          <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl" aria-hidden />
+          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-600/10 blur-3xl" aria-hidden />
+          <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-brand-600/20 blur-3xl" aria-hidden />
         </>
       )}
       <div className="relative mx-auto max-w-5xl px-6 py-24 md:py-32 lg:px-8">

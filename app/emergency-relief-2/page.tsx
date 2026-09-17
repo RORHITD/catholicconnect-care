@@ -71,7 +71,7 @@ export default function EmergencyRelief2Page() {
           <div className="mt-12 text-center">
             <Link
               href="/emergency-relief-fund"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               See the Emergency Relief Fund
             </Link>

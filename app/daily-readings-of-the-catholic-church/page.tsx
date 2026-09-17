@@ -62,7 +62,7 @@ export default async function DailyReadingsPage() {
               href={today.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-600"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-cream-50 transition hover:bg-brand-700"
             >
               Read full reading at USCCB
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>

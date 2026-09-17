@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 
 type Props = {
@@ -28,7 +29,9 @@ export default function CommitToGiving({
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <DonorboxEmbed height={760} placement={placement} />
+            <Suspense fallback={<div style={{ minHeight: 760 }} />}>
+              <DonorboxEmbed height={760} placement={placement} lazy />
+            </Suspense>
           </div>
         </div>
       </div>

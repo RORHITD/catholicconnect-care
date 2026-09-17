@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { canonical } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
+import { Suspense } from "react";
 import DonorboxEmbed from "@/components/donorbox/donorbox-embed";
 import JsonLd from "@/components/seo/json-ld";
 import { graph, faq, breadcrumbs } from "@/lib/schema";
@@ -10,7 +11,7 @@ import Testimonials from "@/components/sections/testimonials";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonical("/donate") },
-  title: "Donate To Support The Catholic Connect Foundation",
+  title: { absolute: "Donate to The Catholic Connect Foundation" },
   description:
     "Donate to support charitable and humanitarian causes including feeding the poor, emergency relief, and educational content for Catholic communities worldwide.",
 };
@@ -138,7 +139,11 @@ export default function DonatePage() {
                   501(c)(3) charity · gifts are tax-deductible · one-time or monthly
                 </p>
               </div>
-              <DonorboxEmbed placement="donate-page" width={500} height={940} />
+              <div id="give">
+                <Suspense fallback={<div style={{ minHeight: 940 }} />}>
+                  <DonorboxEmbed placement="donate-page" width={500} height={940} />
+                </Suspense>
+              </div>
             </div>
           </div>
         </div>
