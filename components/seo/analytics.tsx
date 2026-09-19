@@ -13,11 +13,10 @@ export const GTM_ID = "GTM-K3QKPB5";
 export const GA4_ID = "G-CGZSZBGYRN";
 export const ADS_ID = "AW-618373056";
 
-// First-party collector (CC - CN). catholicconnect.care's DNS is on SiteGround,
-// not our Cloudflare account, so it cannot have its own e.<domain> endpoint —
-// it posts cross-origin to the catholicconnect.io collector instead. Data still
-// lands; only the cookie is not first-party for this host.
-export const COLLECTOR_URL = "https://e.catholicconnect.io";
+// First-party collector (CC - CN). DNS moved to Cloudflare 2026-09-19, so this
+// is a true first-party endpoint on our own host — the cookie is not subject to
+// Safari's 7-day cap on cross-site cookies.
+export const COLLECTOR_URL = "https://e.catholicconnect.care";
 
 export default function Analytics() {
   return (
