@@ -27,7 +27,6 @@ const staticPages: { path: string; changefreq: string; priority: number }[] = [
   { path: "/double-your-donation", changefreq: "monthly", priority: 0.7 },
   { path: "/feeding-the-hungry-2", changefreq: "monthly", priority: 0.6 },
   { path: "/emergency-relief-2", changefreq: "monthly", priority: 0.6 },
-  { path: "/daily-readings", changefreq: "daily", priority: 0.6 },
   { path: "/faith-in-action", changefreq: "daily", priority: 0.85 },
   { path: "/news-of-the-catholic-church", changefreq: "daily", priority: 0.7 },
   { path: "/daily-readings-of-the-catholic-church", changefreq: "daily", priority: 0.7 },

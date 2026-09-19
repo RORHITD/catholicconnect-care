@@ -13,6 +13,16 @@ export type Redirect = { source: string; destination: string; permanent: boolean
 
 export const SLUG_CHANGES: Redirect[] = [
   {
+    // Daily Mass readings now live on our own masstimesnearme.org/readings.
+    // Old /daily-readings/ path forwarded so bookmarks and any residual SEO
+    // land on the canonical page. "Saint of the Day"
+    // (/daily-readings-of-the-catholic-church) is a different page and stays.
+    source: "/daily-readings",
+    destination: "https://masstimesnearme.org/readings",
+    permanent: true,
+    why: "Readings consolidated onto masstimesnearme.org/readings (Richy, 2026-09-19).",
+  },
+  {
     // 8 organic clicks / 6,225 impressions at position 20.1 over 480 days —
     // negligible. Its ~22,000 sessions came almost entirely from Google Ads
     // DSA. A slug reading "elementor-38554" is a liability in the SERP, in ad
@@ -20,7 +30,7 @@ export const SLUG_CHANGES: Redirect[] = [
     source: "/elementor-38554",
     // Trailing slash is explicit: with trailingSlash:true a destination
     // without it produces a 308 -> 308 chain, and every hop loses signal.
-    destination: "/daily-readings/",
+    destination: "https://masstimesnearme.org/readings",
     permanent: true,
     why: "Junk builder slug; negligible organic value; renaming is safe.",
   },

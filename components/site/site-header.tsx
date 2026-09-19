@@ -54,7 +54,7 @@ const groups: NavGroup[] = [
     sections: [
       {
         items: [
-          { href: "/daily-readings", label: "Daily Readings", hint: "Today's Mass readings" },
+          { href: "https://masstimesnearme.org/readings", label: "Daily Readings", hint: "Today's Mass readings", external: true },
           { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day", hint: "A saint for every day" },
           { href: "/news-of-the-catholic-church", label: "Catholic News", hint: "Vatican News, CNA and Aleteia" },
         ],

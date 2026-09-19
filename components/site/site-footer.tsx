@@ -9,7 +9,7 @@ const ourWork: { href: string; label: string; external?: boolean }[] = [
 ];
 
 const faithResources: { href: string; label: string; external?: boolean }[] = [
-  { href: "/daily-readings", label: "Daily Readings" },
+  { href: "https://masstimesnearme.org/readings", label: "Daily Readings", external: true },
   { href: "/daily-readings-of-the-catholic-church", label: "Saint of the Day" },
   { href: "/news-of-the-catholic-church", label: "Catholic News" },
 ];
